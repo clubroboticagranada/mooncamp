@@ -3657,6 +3657,209 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
+  <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
+  <odeParentPageId>page-mqzhbso9-e3v00cdwf</odeParentPageId>
+  <pageName>EVALUACIÓN DEL PROYECTO</pageName>
+  <odeNavStructureOrder>3</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>EVALUACIÓN DEL PROYECTO</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>EVALUACIÓN DEL PROYECTO</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
+      <odeBlockId>20251219163328FECDPS</odeBlockId>
+      <blockName>Evaluación del Proyecto</blockName>
+      <iconName>book</iconName>
+      <odePagStructureOrder>252</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
+          <odeBlockId>20251219163328FECDPS</odeBlockId>
+          <odeIdeviceId>20251204113734RSXJIP</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<p><br />Rúbricas basadas en:</p>
+<ul>
+<li>Creatividad en el diseño del robot.</li>
+<li>Funcionalidad del sistema automatizado.</li>
+<li>Trabajo en grupo y resolución de problemas.</li>
+<li>Presentación final del proyecto.</li>
+</ul>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20251204113734RSXJIP","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"<p><br />Rúbricas basadas en:</p>\n<ul>\n<li>Creatividad en el diseño del robot.</li>\n<li>Funcionalidad del sistema automatizado.</li>\n<li>Trabajo en grupo y resolución de problemas.</li>\n<li>Presentación final del proyecto.</li>\n</ul>","textFeedbackInput":"","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
+  <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
+  <odeParentPageId>page-mqzhbso9-e3v00cdwf</odeParentPageId>
+  <pageName>ACTIVIDADES EN EL AULA</pageName>
+  <odeNavStructureOrder>4</odeNavStructureOrder>
+  <odeNavStructureProperties>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>ACTIVIDADES EN EL AULA</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>visibility</key>
+      <value>true</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>highlight</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>hidePageTitle</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>editableInPage</key>
+      <value>false</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titlePage</key>
+      <value>ACTIVIDADES EN EL AULA</value>
+    </odeNavStructureProperty>
+    <odeNavStructureProperty>
+      <key>titleNode</key>
+      <value></value>
+    </odeNavStructureProperty>
+  </odeNavStructureProperties>
+  <odePagStructures>
+    <odePagStructure>
+      <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
+      <odeBlockId>20251219163328DCQKES</odeBlockId>
+      <blockName>Actividades en el Aula</blockName>
+      <iconName>book</iconName>
+      <odePagStructureOrder>249</odePagStructureOrder>
+      <odePagStructureProperties>
+        <odePagStructureProperty>
+          <key>visibility</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>teacherOnly</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>allowToggle</key>
+          <value>true</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>minimized</key>
+          <value>false</value>
+        </odePagStructureProperty>
+        <odePagStructureProperty>
+          <key>cssClass</key>
+          <value></value>
+        </odePagStructureProperty>
+      </odePagStructureProperties>
+      <odeComponents>
+        <odeComponent>
+          <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
+          <odeBlockId>20251219163328DCQKES</odeBlockId>
+          <odeIdeviceId>20251204113734MIWCYG</odeIdeviceId>
+          <odeIdeviceTypeName>text</odeIdeviceTypeName>
+          <htmlView><![CDATA[<ul>
+<li>Diseño y construcción de terreno lunar simulado.</li>
+<li>Uso de materiales reciclables.</li>
+<li>Representación de cráteres, rocas, bases lunares.</li>
+<li>Modificación del robot.</li>
+<li>Taller de montaje y soldadura básica.</li>
+<li>Impresión 3D de accesorios.</li>
+<li>Programación.</li>
+<li>Rutas automatizadas con sensores de línea.</li>
+<li>Evitación de obstáculos con sensores ultrasónicos.</li>
+<li>Simulación de misión Moon Camp.</li>
+<li>Misión: recolectar “muestras lunares”, detectar temperatura y humedad del entorno.</li>
+<li>Evaluación por precisión, eficiencia y trabajo en equipo.<br /><br /> </li>
+</ul>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20251204113734MIWCYG","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"<ul>\n<li>Diseño y construcción de terreno lunar simulado.</li>\n<li>Uso de materiales reciclables.</li>\n<li>Representación de cráteres, rocas, bases lunares.</li>\n<li>Modificación del robot.</li>\n<li>Taller de montaje y soldadura básica.</li>\n<li>Impresión 3D de accesorios.</li>\n<li>Programación.</li>\n<li>Rutas automatizadas con sensores de línea.</li>\n<li>Evitación de obstáculos con sensores ultrasónicos.</li>\n<li>Simulación de misión Moon Camp.</li>\n<li>Misión: recolectar “muestras lunares”, detectar temperatura y humedad del entorno.</li>\n<li>Evaluación por precisión, eficiencia y trabajo en equipo.<br /><br /> </li>\n</ul>","textFeedbackInput":"","textFeedbackTextarea":""}]]></jsonProperties>
+          <odeComponentsOrder>1</odeComponentsOrder>
+          <odeComponentsProperties>
+            <odeComponentsProperty>
+              <key>visibility</key>
+              <value>true</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>teacherOnly</key>
+              <value>false</value>
+            </odeComponentsProperty>
+            <odeComponentsProperty>
+              <key>cssClass</key>
+              <value></value>
+            </odeComponentsProperty>
+          </odeComponentsProperties>
+        </odeComponent>
+      </odeComponents>
+    </odePagStructure>
+  </odePagStructures>
+</odeNavStructure>
+<odeNavStructure>
   <odePageId>page-mqzhbspg-7pio2raw0</odePageId>
   <odeParentPageId>page-mqzhbso5-8tqohjutn</odeParentPageId>
   <pageName>MOON GARDEN</pageName>
@@ -5804,213 +6007,10 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
-  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
-  <pageName>ACTIVIDADES EN EL AULA</pageName>
-  <odeNavStructureOrder>7</odeNavStructureOrder>
-  <odeNavStructureProperties>
-    <odeNavStructureProperty>
-      <key>titlePage</key>
-      <value>ACTIVIDADES EN EL AULA</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>visibility</key>
-      <value>true</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>highlight</key>
-      <value>false</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>hidePageTitle</key>
-      <value>false</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>editableInPage</key>
-      <value>false</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>titlePage</key>
-      <value>ACTIVIDADES EN EL AULA</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>titleNode</key>
-      <value></value>
-    </odeNavStructureProperty>
-  </odeNavStructureProperties>
-  <odePagStructures>
-    <odePagStructure>
-      <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
-      <odeBlockId>20251219163328DCQKES</odeBlockId>
-      <blockName>Actividades en el Aula</blockName>
-      <iconName>book</iconName>
-      <odePagStructureOrder>249</odePagStructureOrder>
-      <odePagStructureProperties>
-        <odePagStructureProperty>
-          <key>visibility</key>
-          <value>true</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>teacherOnly</key>
-          <value>false</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>allowToggle</key>
-          <value>true</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>minimized</key>
-          <value>false</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>cssClass</key>
-          <value></value>
-        </odePagStructureProperty>
-      </odePagStructureProperties>
-      <odeComponents>
-        <odeComponent>
-          <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
-          <odeBlockId>20251219163328DCQKES</odeBlockId>
-          <odeIdeviceId>20251204113734MIWCYG</odeIdeviceId>
-          <odeIdeviceTypeName>text</odeIdeviceTypeName>
-          <htmlView><![CDATA[<ul>
-<li>Diseño y construcción de terreno lunar simulado.</li>
-<li>Uso de materiales reciclables.</li>
-<li>Representación de cráteres, rocas, bases lunares.</li>
-<li>Modificación del robot.</li>
-<li>Taller de montaje y soldadura básica.</li>
-<li>Impresión 3D de accesorios.</li>
-<li>Programación.</li>
-<li>Rutas automatizadas con sensores de línea.</li>
-<li>Evitación de obstáculos con sensores ultrasónicos.</li>
-<li>Simulación de misión Moon Camp.</li>
-<li>Misión: recolectar “muestras lunares”, detectar temperatura y humedad del entorno.</li>
-<li>Evaluación por precisión, eficiencia y trabajo en equipo.<br /><br /> </li>
-</ul>]]></htmlView>
-          <jsonProperties><![CDATA[{"ideviceId":"20251204113734MIWCYG","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"<ul>\n<li>Diseño y construcción de terreno lunar simulado.</li>\n<li>Uso de materiales reciclables.</li>\n<li>Representación de cráteres, rocas, bases lunares.</li>\n<li>Modificación del robot.</li>\n<li>Taller de montaje y soldadura básica.</li>\n<li>Impresión 3D de accesorios.</li>\n<li>Programación.</li>\n<li>Rutas automatizadas con sensores de línea.</li>\n<li>Evitación de obstáculos con sensores ultrasónicos.</li>\n<li>Simulación de misión Moon Camp.</li>\n<li>Misión: recolectar “muestras lunares”, detectar temperatura y humedad del entorno.</li>\n<li>Evaluación por precisión, eficiencia y trabajo en equipo.<br /><br /> </li>\n</ul>","textFeedbackInput":"","textFeedbackTextarea":""}]]></jsonProperties>
-          <odeComponentsOrder>1</odeComponentsOrder>
-          <odeComponentsProperties>
-            <odeComponentsProperty>
-              <key>visibility</key>
-              <value>true</value>
-            </odeComponentsProperty>
-            <odeComponentsProperty>
-              <key>teacherOnly</key>
-              <value>false</value>
-            </odeComponentsProperty>
-            <odeComponentsProperty>
-              <key>cssClass</key>
-              <value></value>
-            </odeComponentsProperty>
-          </odeComponentsProperties>
-        </odeComponent>
-      </odeComponents>
-    </odePagStructure>
-  </odePagStructures>
-</odeNavStructure>
-<odeNavStructure>
-  <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
-  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
-  <pageName>EVALUACIÓN DEL PROYECTO</pageName>
-  <odeNavStructureOrder>8</odeNavStructureOrder>
-  <odeNavStructureProperties>
-    <odeNavStructureProperty>
-      <key>titlePage</key>
-      <value>EVALUACIÓN DEL PROYECTO</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>visibility</key>
-      <value>true</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>highlight</key>
-      <value>false</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>hidePageTitle</key>
-      <value>false</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>editableInPage</key>
-      <value>false</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>titlePage</key>
-      <value>EVALUACIÓN DEL PROYECTO</value>
-    </odeNavStructureProperty>
-    <odeNavStructureProperty>
-      <key>titleNode</key>
-      <value></value>
-    </odeNavStructureProperty>
-  </odeNavStructureProperties>
-  <odePagStructures>
-    <odePagStructure>
-      <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
-      <odeBlockId>20251219163328FECDPS</odeBlockId>
-      <blockName>Evaluación del Proyecto</blockName>
-      <iconName>book</iconName>
-      <odePagStructureOrder>252</odePagStructureOrder>
-      <odePagStructureProperties>
-        <odePagStructureProperty>
-          <key>visibility</key>
-          <value>true</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>teacherOnly</key>
-          <value>false</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>allowToggle</key>
-          <value>true</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>minimized</key>
-          <value>false</value>
-        </odePagStructureProperty>
-        <odePagStructureProperty>
-          <key>cssClass</key>
-          <value></value>
-        </odePagStructureProperty>
-      </odePagStructureProperties>
-      <odeComponents>
-        <odeComponent>
-          <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
-          <odeBlockId>20251219163328FECDPS</odeBlockId>
-          <odeIdeviceId>20251204113734RSXJIP</odeIdeviceId>
-          <odeIdeviceTypeName>text</odeIdeviceTypeName>
-          <htmlView><![CDATA[<p><br />Rúbricas basadas en:</p>
-<ul>
-<li>Creatividad en el diseño del robot.</li>
-<li>Funcionalidad del sistema automatizado.</li>
-<li>Trabajo en grupo y resolución de problemas.</li>
-<li>Presentación final del proyecto.</li>
-</ul>]]></htmlView>
-          <jsonProperties><![CDATA[{"ideviceId":"20251204113734RSXJIP","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"<p><br />Rúbricas basadas en:</p>\n<ul>\n<li>Creatividad en el diseño del robot.</li>\n<li>Funcionalidad del sistema automatizado.</li>\n<li>Trabajo en grupo y resolución de problemas.</li>\n<li>Presentación final del proyecto.</li>\n</ul>","textFeedbackInput":"","textFeedbackTextarea":""}]]></jsonProperties>
-          <odeComponentsOrder>1</odeComponentsOrder>
-          <odeComponentsProperties>
-            <odeComponentsProperty>
-              <key>visibility</key>
-              <value>true</value>
-            </odeComponentsProperty>
-            <odeComponentsProperty>
-              <key>teacherOnly</key>
-              <value>false</value>
-            </odeComponentsProperty>
-            <odeComponentsProperty>
-              <key>cssClass</key>
-              <value></value>
-            </odeComponentsProperty>
-          </odeComponentsProperties>
-        </odeComponent>
-      </odeComponents>
-    </odePagStructure>
-  </odePagStructures>
-</odeNavStructure>
-<odeNavStructure>
   <odePageId>page-mqzhbsqa-2amssm9oz</odePageId>
-  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
+  <odeParentPageId>page-mqzhbso5-8tqohjutn</odeParentPageId>
   <pageName>CRÉDITOS</pageName>
-  <odeNavStructureOrder>9</odeNavStructureOrder>
+  <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
     <odeNavStructureProperty>
       <key>titlePage</key>
