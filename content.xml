@@ -6076,16 +6076,19 @@
           <odeBlockId>20251219163328PQMYCW</odeBlockId>
           <odeIdeviceId>20251204113734KEGFQU</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
-          <htmlView><![CDATA[<p style="text-align: center;">Proyecto realizado en el Club Robótica Granada por:</p>
+          <htmlView><![CDATA[<div class="exe-text-template">
+    <p style="text-align: center;">Proyecto realizado en el Club Robótica Granada por:</p>
 <p style="text-align: left; padding-left: 390px;">- Pedro Ruiz</p>
 <p style="text-align: left; padding-left: 390px;">- Pablo Moraga</p>
 <p style="text-align: left; padding-left: 390px;">- Francisco Abarca</p>
 <p style="text-align: left; padding-left: 390px;">- Eufrasio Cabrera</p>
 <p style="text-align: left; padding-left: 390px;">- Manuel Hidalgo</p>
+<p style="text-align: left; padding-left: 390px;">- Daniel Rodríguez</p>
 <p style="text-align: left; padding-left: 390px;">- Federico Coca</p>
 <p style="text-align: left; padding-left: 390px;">- Ana (Cited).</p>
-<p style="text-align: center; padding-left: 120px;"></p>]]></htmlView>
-          <jsonProperties><![CDATA[{"ideviceId":"20251204113734KEGFQU","textInfoDurationInput":"","textInfoParticipantsInput":"","textInfoDurationTextInput":"","textInfoParticipantsTextInput":"","textTextarea":"<p style=\"text-align: center;\">Proyecto realizado en el Club Robótica Granada por:</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Pedro Ruiz</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Pablo Moraga</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Francisco Abarca</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Eufrasio Cabrera</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Manuel Hidalgo</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Federico Coca</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Ana (Cited).</p>\n<p style=\"text-align: center; padding-left: 120px;\"></p>","textFeedbackInput":"","textFeedbackTextarea":""}]]></jsonProperties>
+<p style="text-align: center; padding-left: 120px;"><br /></p>
+</div>]]></htmlView>
+          <jsonProperties><![CDATA[{"ideviceId":"20251204113734KEGFQU","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p style=\"text-align: center;\">Proyecto realizado en el Club Robótica Granada por:</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Pedro Ruiz</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Pablo Moraga</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Francisco Abarca</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Eufrasio Cabrera</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Manuel Hidalgo</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Daniel Rodríguez</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Federico Coca</p>\n<p style=\"text-align: left; padding-left: 390px;\">- Ana (Cited).</p>\n<p style=\"text-align: center; padding-left: 120px;\"><br /></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
           <odeComponentsOrder>1</odeComponentsOrder>
           <odeComponentsProperties>
             <odeComponentsProperty>
