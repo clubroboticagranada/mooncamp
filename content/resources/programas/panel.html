@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MQTT Control Panel</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap');
+
+  :root {
+    --bg: #090e1a;
+    --panel: #0d1525;
+    --border: #1a2a4a;
+    --accent-blue: #00c8ff;
+    --accent-red: #ff3a3a;
+    --accent-green: #00ff9d;
+    --accent-yellow: #ffcc00;
+    --text: #c8d8f0;
+    --text-dim: #4a6080;
+    --glow-blue: 0 0 18px #00c8ff88;
+    --glow-red: 0 0 18px #ff3a3a88;
+    --glow-green: 0 0 12px #00ff9d66;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.08) 2px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  header {
+    padding: 18px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(90deg, #0d1525 0%, #0a1020 100%);
+  }
+
+  header h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: var(--accent-blue);
+    text-shadow: var(--glow-blue);
+    text-transform: uppercase;
+  }
+
+  #status-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #ff3a3a;
+    box-shadow: 0 0 8px #ff3a3a;
+    flex-shrink: 0;
+    transition: all 0.4s;
+  }
+  #status-dot.connected {
+    background: var(--accent-green);
+    box-shadow: var(--glow-green);
+    animation: pulse 2s infinite;
+  }
+  #status-label {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 280px 1fr 320px;
+    grid-template-rows: auto 1fr;
+    gap: 0;
+    height: calc(100vh - 61px);
+  }
+
+  /* ─── LEFT: LED Controls ─── */
+  .panel-left {
+    border-right: 1px solid var(--border);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background: var(--panel);
+    overflow-y: auto;
+  }
+
+  .section-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+  }
+
+  .led-card {
+    background: #0a1322;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: border-color 0.3s;
+  }
+  .led-card.active-blue { border-color: var(--accent-blue); box-shadow: 0 0 20px #00c8ff22; }
+  .led-card.active-red  { border-color: var(--accent-red);  box-shadow: 0 0 20px #ff3a3a22; }
+
+  .led-label {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .led-bulb {
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    transition: all 0.3s;
+  }
+  .led-bulb.blue { color: var(--accent-blue); }
+  .led-bulb.red  { color: var(--accent-red); }
+  .led-bulb.on.blue { background: var(--accent-blue); box-shadow: var(--glow-blue); }
+  .led-bulb.on.red  { background: var(--accent-red);  box-shadow: var(--glow-red); }
+
+  /* Toggle switch */
+  .toggle-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .toggle-switch {
+    position: relative;
+    width: 72px; height: 34px;
+    cursor: pointer;
+  }
+  .toggle-switch input { display: none; }
+  .toggle-track {
+    position: absolute;
+    inset: 0;
+    background: #1a2a3a;
+    border-radius: 34px;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+  }
+  .toggle-thumb {
+    position: absolute;
+    top: 4px; left: 4px;
+    width: 24px; height: 24px;
+    background: var(--text-dim);
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  input:checked ~ .toggle-track {
+    background: #0a2030;
+  }
+  input:checked ~ .toggle-thumb {
+    transform: translateX(38px);
+  }
+  .toggle-blue input:checked ~ .toggle-track { border-color: var(--accent-blue); box-shadow: inset 0 0 10px #00c8ff33; }
+  .toggle-blue input:checked ~ .toggle-thumb { background: var(--accent-blue); box-shadow: var(--glow-blue); }
+  .toggle-red  input:checked ~ .toggle-track { border-color: var(--accent-red);  box-shadow: inset 0 0 10px #ff3a3a33; }
+  .toggle-red  input:checked ~ .toggle-thumb { background: var(--accent-red);  box-shadow: var(--glow-red); }
+
+  .toggle-state {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    min-width: 28px;
+  }
+
+  /* CSV Recording button */
+  .record-section {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #btn-record {
+    background: transparent;
+    border: 1px solid var(--accent-green);
+    color: var(--accent-green);
+    font-family: 'Orbitron', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+  }
+  #btn-record:hover { background: #00ff9d15; box-shadow: 0 0 16px #00ff9d44; }
+  #btn-record.recording {
+    background: #00ff9d18;
+    animation: rec-pulse 1s infinite;
+  }
+  @keyframes rec-pulse {
+    0%, 100% { border-color: var(--accent-green); box-shadow: 0 0 8px #00ff9d66; }
+    50% { border-color: #00aa6a; box-shadow: none; }
+  }
+
+  .rec-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    display: none;
+  }
+  .recording .rec-dot {
+    display: block;
+    animation: blink 0.8s infinite;
+  }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+  #rec-count {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    text-align: center;
+  }
+
+  /* ─── CENTER: Charts ─── */
+  .panel-center {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--bg);
+  }
+
+  .chart-area {
+    flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    padding: 20px;
+    gap: 16px;
+    overflow: hidden;
+  }
+
+  .chart-box {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 0;
+  }
+
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .chart-name {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+  .chart-value {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .chart-value.temp { color: var(--accent-red); text-shadow: var(--glow-red); }
+  .chart-value.hum  { color: var(--accent-blue); text-shadow: var(--glow-blue); }
+  .chart-value.unit { font-size: 0.75rem; margin-left: 4px; color: var(--text-dim); }
+
+  .chart-canvas-wrap { flex: 1; min-height: 0; position: relative; }
+  canvas { width: 100% !important; height: 100% !important; }
+
+  /* ─── RIGHT: Console ─── */
+  .panel-right {
+    border-left: 1px solid var(--border);
+    background: var(--panel);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .console-header {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .console-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+  }
+  #btn-clear {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.65rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    transition: all 0.2s;
+  }
+  #btn-clear:hover { border-color: var(--text-dim); color: var(--text); }
+
+  #console-log {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+  #console-log::-webkit-scrollbar { width: 4px; }
+  #console-log::-webkit-scrollbar-track { background: transparent; }
+  #console-log::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .log-entry {
+    display: grid;
+    grid-template-columns: 60px 12px auto;
+    gap: 4px;
+    align-items: start;
+    animation: fade-in 0.2s ease;
+  }
+  @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } }
+
+  .log-time { color: var(--text-dim); font-size: 0.65rem; }
+  .log-dir  { font-size: 0.65rem; }
+  .log-dir.rx { color: var(--accent-blue); }
+  .log-dir.tx { color: var(--accent-yellow); }
+  .log-dir.sys { color: var(--accent-green); }
+  .log-msg { color: var(--text); word-break: break-all; }
+  .log-topic { color: var(--accent-yellow); }
+  .log-val   { color: var(--accent-green); }
+
+  /* Connection badge */
+  .conn-badge {
+    margin: 0 16px 12px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    background: #0a1020;
+    border: 1px solid var(--border);
+    word-break: break-all;
+    color: var(--text-dim);
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span id="status-dot"></span>
+  <h1>MQTT&nbsp;Control&nbsp;Panel</h1>
+  <span id="status-label">DESCONECTADO</span>
+</header>
+
+<div class="grid">
+
+  <!-- LEFT -->
+  <div class="panel-left">
+    <div class="section-title">Control LEDs</div>
+
+    <!-- LED Azul -->
+    <div class="led-card" id="card-blue">
+      <div class="led-label">
+        <span class="led-bulb blue" id="bulb-blue"></span>
+        LED AZUL
+      </div>
+      <div class="toggle-wrap">
+        <label class="toggle-switch toggle-blue">
+          <input type="checkbox" id="toggle-blue" onchange="ledToggle('blue', this.checked)">
+          <div class="toggle-track"></div>
+          <div class="toggle-thumb"></div>
+        </label>
+        <span class="toggle-state" id="state-blue" style="color:var(--text-dim)">OFF</span>
+      </div>
+      <div style="font-size:0.65rem;color:var(--text-dim)">Topic: <span style="color:var(--accent-blue)">ledazul</span></div>
+    </div>
+
+    <!-- LED Rojo -->
+    <div class="led-card" id="card-red">
+      <div class="led-label">
+        <span class="led-bulb red" id="bulb-red"></span>
+        LED ROJO
+      </div>
+      <div class="toggle-wrap">
+        <label class="toggle-switch toggle-red">
+          <input type="checkbox" id="toggle-red" onchange="ledToggle('red', this.checked)">
+          <div class="toggle-track"></div>
+          <div class="toggle-thumb"></div>
+        </label>
+        <span class="toggle-state" id="state-red" style="color:var(--text-dim)">OFF</span>
+      </div>
+      <div style="font-size:0.65rem;color:var(--text-dim)">Topic: <span style="color:var(--accent-red)">ledrojo</span></div>
+    </div>
+
+    <!-- Recording -->
+    <div class="record-section">
+      <div class="section-title">Registro CSV</div>
+      <button id="btn-record" onclick="toggleRecording()">
+        <span class="rec-dot"></span>
+        <span id="rec-label">● INICIAR GRABACIÓN</span>
+      </button>
+      <div id="rec-count">0 muestras</div>
+    </div>
+  </div>
+
+  <!-- CENTER -->
+  <div class="panel-center">
+    <div class="chart-area">
+      <div class="chart-box">
+        <div class="chart-header">
+          <span class="chart-name">🌡 Temperatura</span>
+          <span>
+            <span class="chart-value temp" id="val-temp">—</span>
+            <span class="chart-value unit">°C</span>
+          </span>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="chart-temp"></canvas>
+        </div>
+      </div>
+      <div class="chart-box">
+        <div class="chart-header">
+          <span class="chart-name">💧 Humedad</span>
+          <span>
+            <span class="chart-value hum" id="val-hum">—</span>
+            <span class="chart-value unit">%</span>
+          </span>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="chart-hum"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Console -->
+  <div class="panel-right">
+    <div class="conn-badge">
+      <span style="color:var(--accent-blue)">broker</span> broker.hivemq.com:8884<br>
+      <span style="color:var(--accent-blue)">sub</span> temperatura · humedad<br>
+      <span style="color:var(--accent-yellow)">pub</span> ledazul · ledrojo
+    </div>
+    <div class="console-header">
+      <span class="console-title">⬡ Consola MQTT</span>
+      <button id="btn-clear" onclick="clearConsole()">LIMPIAR</button>
+    </div>
+    <div id="console-log"></div>
+  </div>
+
+</div>
+
+<script>
+// ─── MQTT Setup ───────────────────────────────────────────
+const BROKER = 'broker.hivemq.com';
+const PORT   = 8884;
+const CLIENT_ID = 'mqttPanel_' + Math.random().toString(16).slice(2, 8);
+
+let client;
+let recording = false;
+let csvData   = [];
+let recCount  = 0;
+
+function connect() {
+  log('sys', 'SYS', `Conectando a ${BROKER}:${PORT}…`);
+  client = new Paho.MQTT.Client(BROKER, PORT, '/mqtt', CLIENT_ID);
+
+  client.onConnectionLost = (r) => {
+    setStatus(false);
+    log('sys', 'SYS', `Conexión perdida: ${r.errorMessage}. Reintentando en 5s…`);
+    setTimeout(connect, 5000);
+  };
+
+  client.onMessageArrived = onMessage;
+
+  client.connect({
+    useSSL: true,
+    onSuccess: () => {
+      setStatus(true);
+      log('sys', 'SYS', 'Conectado correctamente');
+      client.subscribe('temperatura');
+      client.subscribe('humedad');
+      log('rx', 'SUB', 'temperatura');
+      log('rx', 'SUB', 'humedad');
+    },
+    onFailure: (e) => {
+      setStatus(false);
+      log('sys', 'SYS', `Error: ${e.errorMessage}. Reintentando en 5s…`);
+      setTimeout(connect, 5000);
+    }
+  });
+}
+
+function setStatus(ok) {
+  const dot   = document.getElementById('status-dot');
+  const label = document.getElementById('status-label');
+  dot.classList.toggle('connected', ok);
+  label.textContent = ok ? 'CONECTADO' : 'DESCONECTADO';
+}
+
+// ─── Message handling ────────────────────────────────────
+function onMessage(msg) {
+  const topic = msg.destinationName;
+  const value = msg.payloadString;
+  log('rx', 'RX', `<span class="log-topic">${topic}</span> → <span class="log-val">${value}</span>`);
+
+  const v = parseFloat(value);
+  const now = new Date().toLocaleTimeString('es-ES', {hour12:false});
+
+  if (topic === 'temperatura' && !isNaN(v)) {
+    document.getElementById('val-temp').textContent = v.toFixed(1);
+    pushChart(chartTemp, v, now);
+    if (recording) addCsvRow(now, v, null);
+  }
+  if (topic === 'humedad' && !isNaN(v)) {
+    document.getElementById('val-hum').textContent = v.toFixed(1);
+    pushChart(chartHum, v, now);
+    if (recording) addCsvRow(now, null, v);
+  }
+}
+
+// ─── LED Controls ────────────────────────────────────────
+function ledToggle(color, on) {
+  const topic = color === 'blue' ? 'ledazul' : 'ledrojo';
+  const value = on ? 'on' : 'off';
+  const accentColor = color === 'blue' ? 'var(--accent-blue)' : 'var(--accent-red)';
+
+  // Update UI
+  const bulb  = document.getElementById(`bulb-${color}`);
+  const state = document.getElementById(`state-${color}`);
+  const card  = document.getElementById(`card-${color}`);
+  bulb.classList.toggle('on', on);
+  state.textContent = on ? 'ON' : 'OFF';
+  state.style.color = on ? accentColor : 'var(--text-dim)';
+  card.classList.toggle(`active-${color}`, on);
+
+  // Publish
+  if (client && client.isConnected()) {
+    const msg = new Paho.MQTT.Message(value);
+    msg.destinationName = topic;
+    msg.retained = false;
+    client.send(msg);
+    log('tx', 'TX', `<span class="log-topic">${topic}</span> ← <span class="log-val">${value}</span>`);
+  } else {
+    log('sys', 'SYS', 'Sin conexión, mensaje no enviado');
+  }
+}
+
+// ─── Charts ──────────────────────────────────────────────
+const MAX_POINTS = 40;
+
+function makeChart(id, color, label) {
+  const ctx = document.getElementById(id).getContext('2d');
+  return new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: [],
+      datasets: [{
+        label,
+        data: [],
+        borderColor: color,
+        backgroundColor: color + '18',
+        borderWidth: 2,
+        pointRadius: 3,
+        pointBackgroundColor: color,
+        tension: 0.4,
+        fill: true,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: { duration: 300 },
+      plugins: { legend: { display: false } },
+      scales: {
+        x: {
+          ticks: { color: '#4a6080', font: { family: 'Share Tech Mono', size: 9 }, maxTicksLimit: 6 },
+          grid:  { color: '#1a2a4a55' }
+        },
+        y: {
+          ticks: { color: '#4a6080', font: { family: 'Share Tech Mono', size: 9 } },
+          grid:  { color: '#1a2a4a55' }
+        }
+      }
+    }
+  });
+}
+
+const chartTemp = makeChart('chart-temp', '#ff3a3a', 'Temperatura °C');
+const chartHum  = makeChart('chart-hum',  '#00c8ff', 'Humedad %');
+
+function pushChart(chart, value, label) {
+  chart.data.labels.push(label);
+  chart.data.datasets[0].data.push(value);
+  if (chart.data.labels.length > MAX_POINTS) {
+    chart.data.labels.shift();
+    chart.data.datasets[0].data.shift();
+  }
+  chart.update('none');
+}
+
+// ─── CSV Recording ───────────────────────────────────────
+function toggleRecording() {
+  recording = !recording;
+  const btn   = document.getElementById('btn-record');
+  const label = document.getElementById('rec-label');
+
+  btn.classList.toggle('recording', recording);
+
+  if (recording) {
+    csvData = [['timestamp', 'temperatura', 'humedad']];
+    recCount = 0;
+    label.textContent = '■ DETENER GRABACIÓN';
+    log('sys', 'SYS', 'Grabación iniciada');
+  } else {
+    label.textContent = '● INICIAR GRABACIÓN';
+    log('sys', 'SYS', `Grabación detenida. ${recCount} muestras capturadas`);
+    if (recCount > 0) downloadCSV();
+  }
+  updateRecCount();
+}
+
+function addCsvRow(ts, temp, hum) {
+  // Find last row and fill in, or create new one
+  const lastRow = csvData.length > 1 ? csvData[csvData.length - 1] : null;
+  if (lastRow && lastRow[0] === ts) {
+    if (temp !== null) lastRow[1] = temp;
+    if (hum  !== null) lastRow[2] = hum;
+  } else {
+    csvData.push([ts, temp !== null ? temp : '', hum !== null ? hum : '']);
+    recCount++;
+  }
+  updateRecCount();
+}
+
+function updateRecCount() {
+  document.getElementById('rec-count').textContent = `${recCount} muestra${recCount !== 1 ? 's' : ''}`;
+}
+
+function downloadCSV() {
+  const content = csvData.map(r => r.join(',')).join('\n');
+  const blob = new Blob([content], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url;
+  a.download = `mqtt_data_${new Date().toISOString().slice(0,19).replace(/[:T]/g,'-')}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+  log('sys', 'SYS', `CSV descargado (${recCount} filas)`);
+}
+
+// ─── Console ─────────────────────────────────────────────
+function log(dir, dirLabel, msg) {
+  const div  = document.getElementById('console-log');
+  const time = new Date().toLocaleTimeString('es-ES', {hour12:false});
+  const entry = document.createElement('div');
+  entry.className = 'log-entry';
+  entry.innerHTML = `
+    <span class="log-time">${time}</span>
+    <span class="log-dir ${dir}">${dirLabel}</span>
+    <span class="log-msg">${msg}</span>
+  `;
+  div.appendChild(entry);
+  div.scrollTop = div.scrollHeight;
+
+  // Keep console tidy
+  while (div.children.length > 200) div.removeChild(div.firstChild);
+}
+
+function clearConsole() {
+  document.getElementById('console-log').innerHTML = '';
+}
+
+// ─── Init ─────────────────────────────────────────────────
+connect();
+</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mqzdid87-kct3u6zyh">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>Como crear Servidor MQTT (Broker) | MoonCamp_ password</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content=".">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mqzdid87-kct3u6zyh" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Moon Camp</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/eserover.html" class="daddy">ESEROver</a>
+<ul class="other-section">
+<li> <a href="../html/objetivos-del-proyecto.html" class="no-ch">OBJETIVOS DEL PROYECTO</a>
+</li>
+<li> <a href="../html/eserover-cutebot.html" class="daddy">ESEROVER Cutebot</a>
+<ul class="other-section">
+<li> <a href="../html/estructura-cutebot.html" class="daddy">Estructura Cutebot</a>
+<ul class="other-section">
+<li> <a href="../html/stl-cutebot.html" class="no-ch">STL Cutebot</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/placa-de-control-microsteamakers.html" class="no-ch">Placa de control (Microsteamakers)</a>
+</li>
+<li> <a href="../html/biblioteca-cutebot.html" class="no-ch">Biblioteca Cutebot</a>
+</li>
+<li> <a href="../html/retos-cutebot-destino-marte.html" class="daddy">Retos Cutebot: Destino Marte</a>
+<ul class="other-section">
+<li> <a href="../html/desplazamiento-sobre-planeta.html" class="no-ch">Desplazamiento sobre planeta</a>
+</li>
+<li> <a href="../html/parada-en-blanco.html" class="no-ch">Parada en blanco</a>
+</li>
+<li> <a href="../html/robot-magico.html" class="no-ch">Robot Mágico</a>
+</li>
+<li> <a href="../html/esquiva-rocas.html" class="no-ch">Esquiva Rocas</a>
+</li>
+<li> <a href="../html/encerrado.html" class="no-ch">Encerrado</a>
+</li>
+<li> <a href="../html/siguelineas.html" class="no-ch">Siguelineas</a>
+</li>
+<li> <a href="../html/control-remoto.html" class="no-ch">Control remoto</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/eserover-iot.html" class="daddy">ESEROVER IoT</a>
+<ul class="other-section">
+<li class="current-page-parent"> <a href="../html/mqtt.html" class="daddy">MQTT</a>
+<ul class="other-section">
+<li> <a href="../html/brokers-disponibles.html" class="no-ch">Brokers disponibles</a>
+</li>
+<li class="active"> <a href="../html/como-crear-servidor-mqtt-broker.html" class="active no-ch">Como crear Servidor MQTT (Broker)</a>
+</li>
+<li> <a href="../html/placa-iot.html" class="no-ch">Placa IoT</a>
+</li>
+<li> <a href="../html/paneles-o-dashboards.html" class="no-ch">Paneles o dashboards</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/control-wifi.html" class="no-ch">Control wifi</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/moon-garden.html" class="daddy">MOON GARDEN</a>
+<ul class="other-section">
+<li> <a href="../html/hardware.html" class="no-ch">Hardware</a>
+</li>
+<li> <a href="../html/conexionado.html" class="no-ch">Conexionado</a>
+</li>
+<li> <a href="../html/estructura-del-moon-garden.html" class="no-ch">Estructura del Moon Garden</a>
+</li>
+<li> <a href="../html/software.html" class="daddy">Software</a>
+<ul class="other-section">
+<li> <a href="../html/programa-completo-con-iot.html" class="no-ch">Programa completo con IOT</a>
+</li>
+<li> <a href="../html/programa-lite-sin-iot.html" class="no-ch">Programa Lite sin IoT</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/moongarden-iot-.html" class="no-ch">Moongarden IoT </a>
+</li>
+<li> <a href="../html/retos.html" class="daddy">Retos</a>
+<ul class="other-section">
+<li> <a href="../html/reto-1-mostrar-en-la-pantalla-la-temperatura.html" class="no-ch">Reto 1. Mostrar en la pantalla la temperatura</a>
+</li>
+<li> <a href="../html/reto-2-color-neomatrix-en-funcion-de-la-temperatur.html" class="no-ch">Reto 2. Color Neomatrix en función de la Temperatura</a>
+</li>
+<li> <a href="../html/reto-3-control-riego-y-luz-con-botones-a-y-b.html" class="no-ch">Reto 3. Control riego y luz con botones A y B</a>
+</li>
+<li> <a href="../html/reto-4-datalogger-temperatura-y-humedad.html" class="no-ch">Reto 4. Datalogger temperatura y humedad</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/entorno-vr.html" class="daddy">Entorno VR</a>
+<ul class="other-section">
+<li> <a href="../html/documentacion.html" class="no-ch">Documentacion</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/actividades-en-el-aula.html" class="no-ch">ACTIVIDADES EN EL AULA</a>
+</li>
+<li> <a href="../html/evaluacion-del-proyecto.html" class="no-ch">EVALUACIÓN DEL PROYECTO</a>
+</li>
+<li> <a href="../html/creditos.html" class="no-ch">CRÉDITOS</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mqzdid87-kct3u6zyh" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">MoonCamp_ password</p></div>
+<div class="page-header"><h1 class="page-title">Como crear Servidor MQTT (Broker)</h1></div>
+</header><div id="page-content-page-mqzdid87-kct3u6zyh" class="page-content">
+<article id="20251124174722EXUVSP" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/book.svg" alt="">
+</div>
+<h1 class="box-title">Creación de Servidor o broker MQTT</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20251121152103EMDUPR" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20251121152103EMDUPR&quot;}">
+<p>El servidor de mqtt lo vamos a instalar en una raspberry pi, en concreto se llama mosquitto, lo he realizado siguiendo minuciosamente los pasos explicados en la web de Luis Llamas. <a href="https://www.luisllamas.es/como-instalar-mosquitto-el-broker-mqtt/" target="_blank" rel="noopener">https://www.luisllamas.es/como-instalar-mosquitto-el-broker-mqtt/.</a> </p>
+<p><span style="font-size: 14pt;"><strong>Instalación de Mosquitto</strong></span></p>
+<p>Para ello en un terminal de raspberry os:</p>
+<p><code>sudo apt update</code><br /><code>sudo apt upgrade</code></p>
+<p>Con estás órdenes actualizamos la base de datos de paquetería.</p>
+<p><code>sudo apt install mosquitto mosquitto-clients</code></p>
+<p>Ahora instalamos el servidor y las herramientas de cliente.</p>
+<p><code></code></p>
+<p>Para verificar el estado del servidor puedes usar la siguiente orden:</p>
+<p><code>sudo systemctl status mosquitto</code></p>
+<p><span style="font-size: 14pt;"><strong>Configuración del servidor</strong></span></p>
+<p>Además hay que modificar el archivo de configuración de mosquitto, en mi caso con el editor de texto nano:</p>
+<p><img src="../content/resources/asset-f4c18dca-9aa7-e930-6e66-64faf4c18eea" alt="configuración de mosquitto 01" title="configuración de mosquitto 01" width="660" height="197" /></p>
+<p>Al mismo añadimos las líneas:</p>
+<p><code><em>listener 1883</em></code></p>
+<p><code><em>allow_anonymous true</em></code></p>
+<p><img src="../content/resources/asset-c3887328-6ce0-83fa--509-70f2ec38874d" alt="configuración mosquitto 02" title="configuración mosquitto 02" width="659" height="469" /></p>
+<p>Esto permite al servidor atender al puerto 1883 (el de mqtt) y permitir el uso del mismo a usuarios anónimos.</p>
+<p><span style="font-size: 14pt;"><strong>Configuración de <em>mosquitto</em> para autenticación</strong></span></p>
+<p>También podemos añadir al servidor usuarios y contraseñas, e incluso no permitir el uso a usuarios anónimos (sin identificación).</p>
+<p>En la web de <a href="https://blog.espol.edu.ec/girni/mqtt-mosquitto-usuario-y-contrasena/" target="_blank" rel="noopener">GIRNI</a> lo explican con detalle.</p>
+<p>Debemos añadir en el fichero de configuración <em>mosquitto.conf </em>:</p>
+<p><code>allow_anonymous false</code><br /><code>password_file /etc/mosquitto/passwd</code></p>
+<p>y comentar para que no tenga efecto la línea:</p>
+<p><code>#allow_anonymous true</code></p>
+<p>La primera línea no permite usuarios anónimos y las segunda indica dónde está el fichero de usuarios y contraseñas cifradas.</p>
+<p>El fichero de configuración quedaría de la siguiente manera:</p>
+<p><img src="../content/resources/asset-3a8a2fa0-0a7c-68fd-30f6-475d3a8a30ca" alt="mosquitto.conf" title="mosquitto.conf" width="660" height="476" /><code></code></p>
+<p>También hemos añadido las líneas:</p>
+<p><code>listener 9001</code></p>
+<p><code>protocol websockets</code></p>
+<p>La primera hace que el servidor pueda escuchar peticiones por el puerto 9001 y la segunda habilita el protocolo websockets, este protocolo con su puerto (9001) permiten que páginas webs se puedan comunicar con servidores mqtt. En el router habrá que abrir el puerto 9001 y redireccionarlo a la ip local de la raspberry pi.</p>
+<p><strong>Para añadir el fichero de usuarios y contraseñas y el primer usuario:</strong></p>
+<p><em><code>sudo mosquitto_passwd -c /etc/mosquitto/passwd usuario</code></em></p>
+<p>con la opción -c crea el fichero y borra el anterior si lo hubiese.</p>
+<p>para la creación los demas usuarios sin la opción -c:</p>
+<p><code><em>sudo mosquitto_passwd /etc/mosquitto/passwd nuevousuario</em></code></p>
+<p>Para comprobar los usuarios del servidor mosquitto usamos:</p>
+<p><code><em>cut -d: -f1 /etc/mosquitto/passwd</em></code></p>
+</div>
+</div>
+</article><article id="20251124174722ZHHEAD" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/description.png" alt="">
+</div>
+<h1 class="box-title">Router</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20251121152103YDJQJM" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20251121152103YDJQJM&quot;}">
+<p>En el enrutador lo primero que debemos hacer es abrir las características de mi dispositivo en la red.</p>
+<p><img src="../content/resources/asset-fe099f76-7782-18d8--767-47852fe09a03" alt="router 01" title="router 01" width="599" height="386" /></p>
+<p>Ahora debemos reservar una ip local para el dispositivo.</p>
+<p><img src="../content/resources/asset-50f27786-08dc-ae4a-582e-d9cc50f27876" alt="router 02" title="router 02" width="601" height="372" /></p>
+<p>Posteriormente haremos una redirección del trafico mqtt al puerto 1883 del router a la ip local del servidor. Está opción está en port forwarding.</p>
+<p><img src="../content/resources/asset-d50b8ef0-45ca-a5e7--6f3-ed4e9d50b90a" alt="router 03" title="router 03" width="600" height="538" /></p>
+<p>Además si queremos trabajar desde webs sobre el servidor debemos abrir el puerto 9001 y redireccionarlo a la ip local del servidor (raspberry pi). De esta forma estamos haciendo posible la conexión mediante el protocolo websockets de páginas webs y el servidor mqtt.</p>
+<p><img src="../content/resources/asset-83dd2368-bc8f-be31-3f52-9d5983dd2497" alt="router04" title="router04" width="600" height="566" /></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/brokers-disponibles.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/placa-iot.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

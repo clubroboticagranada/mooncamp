@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control MQTT Invernadero</title>
+
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    background:#f4f4f4;
+}
+
+h1{
+    text-align:center;
+}
+
+.panel{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    cursor:pointer;
+}
+
+.on{
+    background:#4CAF50;
+    color:white;
+}
+
+.off{
+    background:#d32f2f;
+    color:white;
+}
+
+#recording{
+    display:none;
+    color:red;
+    font-weight:bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    50%{opacity:0;}
+}
+
+canvas{
+    background:white;
+    border-radius:10px;
+    padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Control MQTT del Invernadero</h1>
+
+<div class="panel">
+
+<div class="card">
+<h3>Riego Forzado</h3>
+<button class="on" onclick="publicar('riego','1')">ON</button>
+<button class="off" onclick="publicar('riego','0')">OFF</button>
+</div>
+
+<div class="card">
+<h3>Luz Ultravioleta</h3>
+<button class="on" onclick="publicar('ultravioleta','1')">ON</button>
+<button class="off" onclick="publicar('ultravioleta','0')">OFF</button>
+</div>
+
+<div class="card">
+<h3>Registro CSV</h3>
+<button onclick="toggleGrabacion()">Iniciar/Detener</button>
+<button onclick="descargarCSV()">Guardar CSV</button>
+<div id="recording">● GRABANDO</div>
+</div>
+
+</div>
+
+<canvas id="grafica"></canvas>
+
+<script>
+
+// -------------------------------------
+// MQTT
+// -------------------------------------
+
+const client = mqtt.connect(
+'wss://broker.hivemq.com:8884/mqtt'
+);
+
+client.on('connect', () => {
+
+    console.log("Conectado MQTT");
+
+    client.subscribe("hi");
+    client.subscribe("he");
+    client.subscribe("ti");
+    client.subscribe("te");
+    client.subscribe("lum");
+    client.subscribe("hs");
+});
+
+function publicar(topic, valor){
+    client.publish(topic, valor);
+}
+
+// -------------------------------------
+// DATOS
+// -------------------------------------
+
+let grabando = false;
+let csvData = [];
+
+const etiquetas = [];
+
+const datosHI = [];
+const datosHE = [];
+const datosTI = [];
+const datosTE = [];
+const datosLUM = [];
+const datosHS = [];
+
+// -------------------------------------
+// GRÁFICA
+// -------------------------------------
+
+const ctx = document.getElementById('grafica');
+
+const chart = new Chart(ctx,{
+    type:'line',
+    data:{
+        labels: etiquetas,
+        datasets:[
+        {
+            label:'Humedad Interior',
+            data:datosHI,
+            borderColor:'blue'
+        },
+        {
+            label:'Humedad Exterior',
+            data:datosHE,
+            borderColor:'cyan'
+        },
+        {
+            label:'Temperatura Interior',
+            data:datosTI,
+            borderColor:'red'
+        },
+        {
+            label:'Temperatura Exterior',
+            data:datosTE,
+            borderColor:'orange'
+        },
+        {
+            label:'Luminosidad',
+            data:datosLUM,
+            borderColor:'gold'
+        },
+        {
+            label:'Humedad Suelo',
+            data:datosHS,
+            borderColor:'green'
+        }
+        ]
+    },
+    options:{
+        responsive:true,
+        animation:false
+    }
+});
+
+// -------------------------------------
+// RECEPCIÓN MQTT
+// -------------------------------------
+
+const ultimoValor = {
+    hi:null,
+    he:null,
+    ti:null,
+    te:null,
+    lum:null,
+    hs:null
+};
+
+client.on('message',(topic,message)=>{
+
+    const valor = parseFloat(message.toString());
+
+    ultimoValor[topic] = valor;
+
+    const hora = new Date().toLocaleTimeString();
+
+    if(topic==="hi") datosHI.push(valor);
+    if(topic==="he") datosHE.push(valor);
+    if(topic==="ti") datosTI.push(valor);
+    if(topic==="te") datosTE.push(valor);
+    if(topic==="lum") datosLUM.push(valor);
+    if(topic==="hs") datosHS.push(valor);
+
+    etiquetas.push(hora);
+
+    if(etiquetas.length > 100){
+
+        etiquetas.shift();
+
+        datosHI.shift();
+        datosHE.shift();
+        datosTI.shift();
+        datosTE.shift();
+        datosLUM.shift();
+        datosHS.shift();
+    }
+
+    chart.update();
+
+    if(grabando){
+
+        csvData.push({
+            fecha:new Date().toISOString(),
+            hi:ultimoValor.hi,
+            he:ultimoValor.he,
+            ti:ultimoValor.ti,
+            te:ultimoValor.te,
+            lum:ultimoValor.lum,
+            hs:ultimoValor.hs
+        });
+
+    }
+
+});
+
+// -------------------------------------
+// GRABACIÓN
+// -------------------------------------
+
+function toggleGrabacion(){
+
+    grabando = !grabando;
+
+    document.getElementById("recording").style.display =
+    grabando ? "block" : "none";
+}
+
+// -------------------------------------
+// CSV
+// -------------------------------------
+
+function descargarCSV(){
+
+    let csv =
+    "fecha,hi,he,ti,te,lum,hs\n";
+
+    csvData.forEach(fila => {
+
+        csv +=
+        fila.fecha + "," +
+        fila.hi + "," +
+        fila.he + "," +
+        fila.ti + "," +
+        fila.te + "," +
+        fila.lum + "," +
+        fila.hs + "\n";
+    });
+
+    const blob =
+    new Blob([csv], {type:'text/csv'});
+
+    const url =
+    window.URL.createObjectURL(blob);
+
+    const a =
+    document.createElement('a');
+
+    a.href = url;
+    a.download = "datos_invernadero.csv";
+    a.click();
+}
+
+</script>
+
+</body>
+</html>
