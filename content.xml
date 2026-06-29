@@ -10,11 +10,11 @@
 <odeResources>
   <odeResource>
     <key>odeId</key>
-    <value>20260629173107KISGS4</value>
+    <value>20260629192213VLJA52</value>
   </odeResource>
   <odeResource>
     <key>odeVersionId</key>
-    <value>20260629173107505PVN</value>
+    <value>20260629192213AWSIFF</value>
   </odeResource>
   <odeResource>
     <key>exe_version</key>
@@ -56,7 +56,7 @@
   </odeProperty>
   <odeProperty>
     <key>pp_modified</key>
-    <value>1782749539331</value>
+    <value>1782754045411</value>
   </odeProperty>
   <odeProperty>
     <key>pp_addExeLink</key>
@@ -68,11 +68,11 @@
   </odeProperty>
   <odeProperty>
     <key>pp_addSearchBox</key>
-    <value>false</value>
+    <value>true</value>
   </odeProperty>
   <odeProperty>
     <key>pp_addAccessibilityToolbar</key>
-    <value>false</value>
+    <value>true</value>
   </odeProperty>
   <odeProperty>
     <key>pp_addMathJax</key>
@@ -93,7 +93,7 @@
 </odeProperties>
 <odeNavStructures>
 <odeNavStructure>
-  <odePageId>page-mqzdid74-89x99my1g</odePageId>
+  <odePageId>page-mqzhbso5-8tqohjutn</odePageId>
   <odeParentPageId></odeParentPageId>
   <pageName>Moon Camp</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
@@ -129,7 +129,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid74-89x99my1g</odePageId>
+      <odePageId>page-mqzhbso5-8tqohjutn</odePageId>
       <odeBlockId>block-1782407326205-o21cn7zz6</odeBlockId>
       <blockName>Desafío Moon Camp</blockName>
       <iconName>geography</iconName>
@@ -158,7 +158,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid74-89x99my1g</odePageId>
+          <odePageId>page-mqzhbso5-8tqohjutn</odePageId>
           <odeBlockId>block-1782407326205-o21cn7zz6</odeBlockId>
           <odeIdeviceId>idevice-1782407326203-23wbpv9ag</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -191,8 +191,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid78-dj91n3gw6</odePageId>
-  <odeParentPageId>page-mqzdid74-89x99my1g</odeParentPageId>
+  <odePageId>page-mqzhbso9-e3v00cdwf</odePageId>
+  <odeParentPageId>page-mqzhbso5-8tqohjutn</odeParentPageId>
   <pageName>ESEROver</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -227,7 +227,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid78-dj91n3gw6</odePageId>
+      <odePageId>page-mqzhbso9-e3v00cdwf</odePageId>
       <odeBlockId>20251219163328CJJPVD</odeBlockId>
       <blockName>Proyecto de Robótica Educativa: Robots de bajo coste para Moon Camp</blockName>
       <iconName></iconName>
@@ -256,7 +256,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid78-dj91n3gw6</odePageId>
+          <odePageId>page-mqzhbso9-e3v00cdwf</odePageId>
           <odeBlockId>20251219163328CJJPVD</odeBlockId>
           <odeIdeviceId>20251204113734NBBICG</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -296,8 +296,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7a-9uam3w5ns</odePageId>
-  <odeParentPageId>page-mqzdid78-dj91n3gw6</odeParentPageId>
+  <odePageId>page-mqzhbsoc-6fa6h8z7h</odePageId>
+  <odeParentPageId>page-mqzhbso9-e3v00cdwf</odeParentPageId>
   <pageName>OBJETIVOS DEL PROYECTO</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -332,7 +332,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7a-9uam3w5ns</odePageId>
+      <odePageId>page-mqzhbsoc-6fa6h8z7h</odePageId>
       <odeBlockId>20251219163328UVHWMO</odeBlockId>
       <blockName></blockName>
       <iconName>book</iconName>
@@ -361,7 +361,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7a-9uam3w5ns</odePageId>
+          <odePageId>page-mqzhbsoc-6fa6h8z7h</odePageId>
           <odeBlockId>20251219163328UVHWMO</odeBlockId>
           <odeIdeviceId>20251204113734YSGOPT</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -394,8 +394,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7c-ym1xz9guo</odePageId>
-  <odeParentPageId>page-mqzdid78-dj91n3gw6</odeParentPageId>
+  <odePageId>page-mqzhbsod-aoakfnj4s</odePageId>
+  <odeParentPageId>page-mqzhbso9-e3v00cdwf</odeParentPageId>
   <pageName>ESEROVER Cutebot</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -430,7 +430,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7c-ym1xz9guo</odePageId>
+      <odePageId>page-mqzhbsod-aoakfnj4s</odePageId>
       <odeBlockId>20251219163328JWGYIY</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -459,7 +459,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7c-ym1xz9guo</odePageId>
+          <odePageId>page-mqzhbsod-aoakfnj4s</odePageId>
           <odeBlockId>20251219163328JWGYIY</odeBlockId>
           <odeIdeviceId>20251204113734OAAVUK</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -491,8 +491,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7e-eueb71ttt</odePageId>
-  <odeParentPageId>page-mqzdid7c-ym1xz9guo</odeParentPageId>
+  <odePageId>page-mqzhbsof-jj10jufzy</odePageId>
+  <odeParentPageId>page-mqzhbsod-aoakfnj4s</odeParentPageId>
   <pageName>Estructura Cutebot</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -527,7 +527,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7e-eueb71ttt</odePageId>
+      <odePageId>page-mqzhbsof-jj10jufzy</odePageId>
       <odeBlockId>20251219163328KZXGBP</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -556,7 +556,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7e-eueb71ttt</odePageId>
+          <odePageId>page-mqzhbsof-jj10jufzy</odePageId>
           <odeBlockId>20251219163328KZXGBP</odeBlockId>
           <odeIdeviceId>20251204113734KLOGGV</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -583,7 +583,7 @@
           </odeComponentsProperties>
         </odeComponent>
         <odeComponent>
-          <odePageId>page-mqzdid7e-eueb71ttt</odePageId>
+          <odePageId>page-mqzhbsof-jj10jufzy</odePageId>
           <odeBlockId>20251219163328KZXGBP</odeBlockId>
           <odeIdeviceId>20251213151700DAPDVV</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -613,7 +613,7 @@
           </odeComponentsProperties>
         </odeComponent>
         <odeComponent>
-          <odePageId>page-mqzdid7e-eueb71ttt</odePageId>
+          <odePageId>page-mqzhbsof-jj10jufzy</odePageId>
           <odeBlockId>20251219163328KZXGBP</odeBlockId>
           <odeIdeviceId>20251213151847WRAZTN</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -647,8 +647,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7g-2fx6la2yo</odePageId>
-  <odeParentPageId>page-mqzdid7e-eueb71ttt</odeParentPageId>
+  <odePageId>page-mqzhbsoi-eblsgi39z</odePageId>
+  <odeParentPageId>page-mqzhbsof-jj10jufzy</odeParentPageId>
   <pageName>STL Cutebot</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -683,7 +683,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7g-2fx6la2yo</odePageId>
+      <odePageId>page-mqzhbsoi-eblsgi39z</odePageId>
       <odeBlockId>20251219163328GWJWPH</odeBlockId>
       <blockName>Archivos STL Cutebot </blockName>
       <iconName></iconName>
@@ -712,7 +712,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7g-2fx6la2yo</odePageId>
+          <odePageId>page-mqzhbsoi-eblsgi39z</odePageId>
           <odeBlockId>20251219163328GWJWPH</odeBlockId>
           <odeIdeviceId>20251204113734TIIAOT</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -742,8 +742,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7i-vwudxx6gv</odePageId>
-  <odeParentPageId>page-mqzdid7c-ym1xz9guo</odeParentPageId>
+  <odePageId>page-mqzhbsoj-uruv6pqu8</odePageId>
+  <odeParentPageId>page-mqzhbsod-aoakfnj4s</odeParentPageId>
   <pageName>Placa de control (Microsteamakers)</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -786,7 +786,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7i-vwudxx6gv</odePageId>
+      <odePageId>page-mqzhbsoj-uruv6pqu8</odePageId>
       <odeBlockId>20251219163328OBNHCN</odeBlockId>
       <blockName></blockName>
       <iconName>book</iconName>
@@ -815,7 +815,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7i-vwudxx6gv</odePageId>
+          <odePageId>page-mqzhbsoj-uruv6pqu8</odePageId>
           <odeBlockId>20251219163328OBNHCN</odeBlockId>
           <odeIdeviceId>202512180940257335AN</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -847,8 +847,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7j-ca3n1bg4d</odePageId>
-  <odeParentPageId>page-mqzdid7c-ym1xz9guo</odeParentPageId>
+  <odePageId>page-mqzhbsol-udrhnues7</odePageId>
+  <odeParentPageId>page-mqzhbsod-aoakfnj4s</odeParentPageId>
   <pageName>Biblioteca Cutebot</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -891,7 +891,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7j-ca3n1bg4d</odePageId>
+      <odePageId>page-mqzhbsol-udrhnues7</odePageId>
       <odeBlockId>20251219163328CQKHYT</odeBlockId>
       <blockName>Biblioteca movimientos Cutebot</blockName>
       <iconName>book</iconName>
@@ -920,7 +920,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7j-ca3n1bg4d</odePageId>
+          <odePageId>page-mqzhbsol-udrhnues7</odePageId>
           <odeBlockId>20251219163328CQKHYT</odeBlockId>
           <odeIdeviceId>20251204113734EZALSQ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -954,8 +954,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7l-ojkh38xbz</odePageId>
-  <odeParentPageId>page-mqzdid7c-ym1xz9guo</odeParentPageId>
+  <odePageId>page-mqzhbsom-fya7x236q</odePageId>
+  <odeParentPageId>page-mqzhbsod-aoakfnj4s</odeParentPageId>
   <pageName>Retos Cutebot: Destino Marte</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -998,7 +998,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7l-ojkh38xbz</odePageId>
+      <odePageId>page-mqzhbsom-fya7x236q</odePageId>
       <odeBlockId>20251219163328LSNMSD</odeBlockId>
       <blockName>Misión ESEROver: Destino Marte</blockName>
       <iconName>rule</iconName>
@@ -1027,7 +1027,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7l-ojkh38xbz</odePageId>
+          <odePageId>page-mqzhbsom-fya7x236q</odePageId>
           <odeBlockId>20251219163328LSNMSD</odeBlockId>
           <odeIdeviceId>20251204124105875ARL</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1059,8 +1059,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7n-cgbbiix91</odePageId>
-  <odeParentPageId>page-mqzdid7l-ojkh38xbz</odeParentPageId>
+  <odePageId>page-mqzhbsoo-tpql49tnm</odePageId>
+  <odeParentPageId>page-mqzhbsom-fya7x236q</odeParentPageId>
   <pageName>Desplazamiento sobre planeta</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1103,7 +1103,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7n-cgbbiix91</odePageId>
+      <odePageId>page-mqzhbsoo-tpql49tnm</odePageId>
       <odeBlockId>block-1779449705647-be59z21qm</odeBlockId>
       <blockName>¡Aterrizaje confirmado!</blockName>
       <iconName>book</iconName>
@@ -1132,7 +1132,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7n-cgbbiix91</odePageId>
+          <odePageId>page-mqzhbsoo-tpql49tnm</odePageId>
           <odeBlockId>block-1779449705647-be59z21qm</odeBlockId>
           <odeIdeviceId>idevice-1779449705644-g3jpgxie5</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1160,7 +1160,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid7n-cgbbiix91</odePageId>
+      <odePageId>page-mqzhbsoo-tpql49tnm</odePageId>
       <odeBlockId>block-1782399849144-ygh86p76l</odeBlockId>
       <blockName>Desplazamiento sobre planeta</blockName>
       <iconName>think</iconName>
@@ -1189,7 +1189,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7n-cgbbiix91</odePageId>
+          <odePageId>page-mqzhbsoo-tpql49tnm</odePageId>
           <odeBlockId>block-1782399849144-ygh86p76l</odeBlockId>
           <odeIdeviceId>idevice-1782399849142-9j0uqvx2o</odeIdeviceId>
           <odeIdeviceTypeName>padlock</odeIdeviceTypeName>
@@ -1216,8 +1216,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7p-r5kcct3gi</odePageId>
-  <odeParentPageId>page-mqzdid7l-ojkh38xbz</odeParentPageId>
+  <odePageId>page-mqzhbsor-33xbhu8cd</odePageId>
+  <odeParentPageId>page-mqzhbsom-fya7x236q</odeParentPageId>
   <pageName>Parada en blanco</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1260,7 +1260,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7p-r5kcct3gi</odePageId>
+      <odePageId>page-mqzhbsor-33xbhu8cd</odePageId>
       <odeBlockId>block-1779450148407-avujacv2j</odeBlockId>
       <blockName>Detectando depósitos blancos</blockName>
       <iconName>book</iconName>
@@ -1289,7 +1289,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7p-r5kcct3gi</odePageId>
+          <odePageId>page-mqzhbsor-33xbhu8cd</odePageId>
           <odeBlockId>block-1779450148407-avujacv2j</odeBlockId>
           <odeIdeviceId>idevice-1779450148406-bo2v1jhu8</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1317,7 +1317,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid7p-r5kcct3gi</odePageId>
+      <odePageId>page-mqzhbsor-33xbhu8cd</odePageId>
       <odeBlockId>block-1782400529916-rjg4icesz</odeBlockId>
       <blockName>Parada en blanco</blockName>
       <iconName>think</iconName>
@@ -1346,7 +1346,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7p-r5kcct3gi</odePageId>
+          <odePageId>page-mqzhbsor-33xbhu8cd</odePageId>
           <odeBlockId>block-1782400529916-rjg4icesz</odeBlockId>
           <odeIdeviceId>idevice-1782400529915-ku7riq00k</odeIdeviceId>
           <odeIdeviceTypeName>padlock</odeIdeviceTypeName>
@@ -1373,8 +1373,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7r-dzry6ttyu</odePageId>
-  <odeParentPageId>page-mqzdid7l-ojkh38xbz</odeParentPageId>
+  <odePageId>page-mqzhbsot-sa8swohqd</odePageId>
+  <odeParentPageId>page-mqzhbsom-fya7x236q</odeParentPageId>
   <pageName>Robot Mágico</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1417,7 +1417,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7r-dzry6ttyu</odePageId>
+      <odePageId>page-mqzhbsot-sa8swohqd</odePageId>
       <odeBlockId>block-1779450477423-uvhmngdyt</odeBlockId>
       <blockName>ESEROver mágico</blockName>
       <iconName>book</iconName>
@@ -1446,15 +1446,16 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7r-dzry6ttyu</odePageId>
+          <odePageId>page-mqzhbsot-sa8swohqd</odePageId>
           <odeBlockId>block-1779450477423-uvhmngdyt</odeBlockId>
           <odeIdeviceId>idevice-1779450477421-44cl0e53c</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
           <htmlView><![CDATA[<div class="exe-text-template">
     <p style="text-align: justify;">Una inesperada tormenta solar está generando interferencias electromagnéticas y estática en la atmósfera de Marte. Para evitar que el robot se descontrole, los ingenieros han activado el "Modo de Interacción de Emergencia". Los astronautas pueden guiar al robot a distancia usando "campos de fuerza" (sus manos), haciendo que el robot reaccione sin tocarlo físicamente.</p>
 <p style="text-align: justify;"><br />El Reto Técnico: Utilizar el sensor de ultrasonidos frontal (o sensores de luz) para que el robot interactúe dinámicamente con un objeto o mano que se le acerque (por ejemplo, retroceder si la mano se acerca demasiado o avanzar si se aleja).</p>
+<p style="text-align: center;"><img src="{{context_path}}/content/resources/algoritmo_reto_magico.png" width="542" height="668" alt="" /></p>
 </div>]]></htmlView>
-          <jsonProperties><![CDATA[{"ideviceId":"idevice-1779450477421-44cl0e53c","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p style=\"text-align: justify;\">Una inesperada tormenta solar está generando interferencias electromagnéticas y estática en la atmósfera de Marte. Para evitar que el robot se descontrole, los ingenieros han activado el \"Modo de Interacción de Emergencia\". Los astronautas pueden guiar al robot a distancia usando \"campos de fuerza\" (sus manos), haciendo que el robot reaccione sin tocarlo físicamente.</p>\n<p style=\"text-align: justify;\"><br />El Reto Técnico: Utilizar el sensor de ultrasonidos frontal (o sensores de luz) para que el robot interactúe dinámicamente con un objeto o mano que se le acerque (por ejemplo, retroceder si la mano se acerca demasiado o avanzar si se aleja).</p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1779450477421-44cl0e53c","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p style=\"text-align: justify;\">Una inesperada tormenta solar está generando interferencias electromagnéticas y estática en la atmósfera de Marte. Para evitar que el robot se descontrole, los ingenieros han activado el \"Modo de Interacción de Emergencia\". Los astronautas pueden guiar al robot a distancia usando \"campos de fuerza\" (sus manos), haciendo que el robot reaccione sin tocarlo físicamente.</p>\n<p style=\"text-align: justify;\"><br />El Reto Técnico: Utilizar el sensor de ultrasonidos frontal (o sensores de luz) para que el robot interactúe dinámicamente con un objeto o mano que se le acerque (por ejemplo, retroceder si la mano se acerca demasiado o avanzar si se aleja).</p>\n<p style=\"text-align: center;\"><img src=\"{{context_path}}/content/resources/algoritmo_reto_magico.png\" width=\"542\" height=\"668\" alt=\"\" /></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
           <odeComponentsOrder>0</odeComponentsOrder>
           <odeComponentsProperties>
             <odeComponentsProperty>
@@ -1474,7 +1475,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid7r-dzry6ttyu</odePageId>
+      <odePageId>page-mqzhbsot-sa8swohqd</odePageId>
       <odeBlockId>block-1782401075830-phja2hol3</odeBlockId>
       <blockName>Robot Mágico</blockName>
       <iconName>think</iconName>
@@ -1503,7 +1504,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7r-dzry6ttyu</odePageId>
+          <odePageId>page-mqzhbsot-sa8swohqd</odePageId>
           <odeBlockId>block-1782401075830-phja2hol3</odeBlockId>
           <odeIdeviceId>idevice-1782401075828-0t5epszmq</odeIdeviceId>
           <odeIdeviceTypeName>padlock</odeIdeviceTypeName>
@@ -1532,8 +1533,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7u-r16dcctc8</odePageId>
-  <odeParentPageId>page-mqzdid7l-ojkh38xbz</odeParentPageId>
+  <odePageId>page-mqzhbsou-85mrikz31</odePageId>
+  <odeParentPageId>page-mqzhbsom-fya7x236q</odeParentPageId>
   <pageName>Esquiva Rocas</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1576,7 +1577,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7u-r16dcctc8</odePageId>
+      <odePageId>page-mqzhbsou-85mrikz31</odePageId>
       <odeBlockId>block-1779450627249-6rqy100xr</odeBlockId>
       <blockName>Esquiva rocas</blockName>
       <iconName>book</iconName>
@@ -1605,7 +1606,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7u-r16dcctc8</odePageId>
+          <odePageId>page-mqzhbsou-85mrikz31</odePageId>
           <odeBlockId>block-1779450627249-6rqy100xr</odeBlockId>
           <odeIdeviceId>idevice-1779450627248-9q8se781u</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1633,7 +1634,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid7u-r16dcctc8</odePageId>
+      <odePageId>page-mqzhbsou-85mrikz31</odePageId>
       <odeBlockId>block-1782402946548-b06c3cad7</odeBlockId>
       <blockName>Esquiva Rocas</blockName>
       <iconName>think</iconName>
@@ -1662,7 +1663,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7u-r16dcctc8</odePageId>
+          <odePageId>page-mqzhbsou-85mrikz31</odePageId>
           <odeBlockId>block-1782402946548-b06c3cad7</odeBlockId>
           <odeIdeviceId>idevice-1782402946547-2tlekr81t</odeIdeviceId>
           <odeIdeviceTypeName>padlock</odeIdeviceTypeName>
@@ -1689,8 +1690,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7w-9sewy9wso</odePageId>
-  <odeParentPageId>page-mqzdid7l-ojkh38xbz</odeParentPageId>
+  <odePageId>page-mqzhbsow-x2695dwdm</odePageId>
+  <odeParentPageId>page-mqzhbsom-fya7x236q</odeParentPageId>
   <pageName>Encerrado</pageName>
   <odeNavStructureOrder>4</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1733,7 +1734,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7w-9sewy9wso</odePageId>
+      <odePageId>page-mqzhbsow-x2695dwdm</odePageId>
       <odeBlockId>block-1779450905249-5ppiaowan</odeBlockId>
       <blockName>ESEROver en zona segura</blockName>
       <iconName>book</iconName>
@@ -1762,7 +1763,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7w-9sewy9wso</odePageId>
+          <odePageId>page-mqzhbsow-x2695dwdm</odePageId>
           <odeBlockId>block-1779450905249-5ppiaowan</odeBlockId>
           <odeIdeviceId>idevice-1779450905242-xzyw3t75w</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -1790,7 +1791,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid7w-9sewy9wso</odePageId>
+      <odePageId>page-mqzhbsow-x2695dwdm</odePageId>
       <odeBlockId>block-1782403837191-zgzw96kz3</odeBlockId>
       <blockName>Encerrado</blockName>
       <iconName>think</iconName>
@@ -1819,7 +1820,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7w-9sewy9wso</odePageId>
+          <odePageId>page-mqzhbsow-x2695dwdm</odePageId>
           <odeBlockId>block-1782403837191-zgzw96kz3</odeBlockId>
           <odeIdeviceId>idevice-1782403837190-saytkf01n</odeIdeviceId>
           <odeIdeviceTypeName>padlock</odeIdeviceTypeName>
@@ -1846,8 +1847,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid7y-5u0uyotgx</odePageId>
-  <odeParentPageId>page-mqzdid7l-ojkh38xbz</odeParentPageId>
+  <odePageId>page-mqzhbsoy-uemlh4n5f</odePageId>
+  <odeParentPageId>page-mqzhbsom-fya7x236q</odeParentPageId>
   <pageName>Siguelineas</pageName>
   <odeNavStructureOrder>5</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -1890,7 +1891,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid7y-5u0uyotgx</odePageId>
+      <odePageId>page-mqzhbsoy-uemlh4n5f</odePageId>
       <odeBlockId>block-1779450990292-6y9f0okk8</odeBlockId>
       <blockName>Siguiendo la ruta</blockName>
       <iconName>book</iconName>
@@ -1919,15 +1920,16 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7y-5u0uyotgx</odePageId>
+          <odePageId>page-mqzhbsoy-uemlh4n5f</odePageId>
           <odeBlockId>block-1779450990292-6y9f0okk8</odeBlockId>
           <odeIdeviceId>idevice-1779450990290-gis31hsfn</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
           <htmlView><![CDATA[<div class="exe-text-template">
     <p style="text-align: justify;">Para optimizar los recursos de la colonia, se ha establecido una "Ruta Logística Automatizada" entre el módulo de energía solar, la planta extractora de oxígeno (MOXIE) y el hábitat diseñado para Moon Camp. El ESEROver operará como un camión de suministros autónomo de alta precisión transportando cargamento vital a lo largo de esta autopista marcada.</p>
 <p style="text-align: justify;"><br />El Reto Técnico: Programar un algoritmo de rastreo de líneas (Line Follower) preciso utilizando los dos sensores infrarrojos inferiores del Cutebot para recorrer la pista sin salirse.<br /> </p>
+<p style="text-align: center;"><img src="{{context_path}}/content/resources/algoritmo_siguelineas.png" width="457" height="646" alt="" /></p>
 </div>]]></htmlView>
-          <jsonProperties><![CDATA[{"ideviceId":"idevice-1779450990290-gis31hsfn","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p style=\"text-align: justify;\">Para optimizar los recursos de la colonia, se ha establecido una \"Ruta Logística Automatizada\" entre el módulo de energía solar, la planta extractora de oxígeno (MOXIE) y el hábitat diseñado para Moon Camp. El ESEROver operará como un camión de suministros autónomo de alta precisión transportando cargamento vital a lo largo de esta autopista marcada.</p>\n<p style=\"text-align: justify;\"><br />El Reto Técnico: Programar un algoritmo de rastreo de líneas (Line Follower) preciso utilizando los dos sensores infrarrojos inferiores del Cutebot para recorrer la pista sin salirse.<br /> </p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <jsonProperties><![CDATA[{"ideviceId":"idevice-1779450990290-gis31hsfn","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p style=\"text-align: justify;\">Para optimizar los recursos de la colonia, se ha establecido una \"Ruta Logística Automatizada\" entre el módulo de energía solar, la planta extractora de oxígeno (MOXIE) y el hábitat diseñado para Moon Camp. El ESEROver operará como un camión de suministros autónomo de alta precisión transportando cargamento vital a lo largo de esta autopista marcada.</p>\n<p style=\"text-align: justify;\"><br />El Reto Técnico: Programar un algoritmo de rastreo de líneas (Line Follower) preciso utilizando los dos sensores infrarrojos inferiores del Cutebot para recorrer la pista sin salirse.<br /> </p>\n<p style=\"text-align: center;\"><img src=\"{{context_path}}/content/resources/algoritmo_siguelineas.png\" width=\"457\" height=\"646\" alt=\"\" /></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
           <odeComponentsOrder>0</odeComponentsOrder>
           <odeComponentsProperties>
             <odeComponentsProperty>
@@ -1947,7 +1949,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid7y-5u0uyotgx</odePageId>
+      <odePageId>page-mqzhbsoy-uemlh4n5f</odePageId>
       <odeBlockId>block-1782404352828-8p874hcar</odeBlockId>
       <blockName>Siguelineas</blockName>
       <iconName>think</iconName>
@@ -1976,7 +1978,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid7y-5u0uyotgx</odePageId>
+          <odePageId>page-mqzhbsoy-uemlh4n5f</odePageId>
           <odeBlockId>block-1782404352828-8p874hcar</odeBlockId>
           <odeIdeviceId>idevice-1782404352827-mydxvlchy</odeIdeviceId>
           <odeIdeviceTypeName>padlock</odeIdeviceTypeName>
@@ -2004,8 +2006,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid80-g3zrwmb2q</odePageId>
-  <odeParentPageId>page-mqzdid7l-ojkh38xbz</odeParentPageId>
+  <odePageId>page-mqzhbsp0-i6v5p0rl4</odePageId>
+  <odeParentPageId>page-mqzhbsom-fya7x236q</odeParentPageId>
   <pageName>Control remoto</pageName>
   <odeNavStructureOrder>6</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2048,7 +2050,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid80-g3zrwmb2q</odePageId>
+      <odePageId>page-mqzhbsp0-i6v5p0rl4</odePageId>
       <odeBlockId>block-1779451127594-u57cwf6ii</odeBlockId>
       <blockName>¡Alerta roja en el cráter (G1-H2)!</blockName>
       <iconName>book</iconName>
@@ -2077,7 +2079,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid80-g3zrwmb2q</odePageId>
+          <odePageId>page-mqzhbsp0-i6v5p0rl4</odePageId>
           <odeBlockId>block-1779451127594-u57cwf6ii</odeBlockId>
           <odeIdeviceId>idevice-1779451127593-jsi60q01t</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2110,7 +2112,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid80-g3zrwmb2q</odePageId>
+      <odePageId>page-mqzhbsp0-i6v5p0rl4</odePageId>
       <odeBlockId>block-1781004920639-kxcttxqyb</odeBlockId>
       <blockName>📸 Visualización del eserover empujador.</blockName>
       <iconName>download</iconName>
@@ -2139,7 +2141,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid80-g3zrwmb2q</odePageId>
+          <odePageId>page-mqzhbsp0-i6v5p0rl4</odePageId>
           <odeBlockId>block-1781004920639-kxcttxqyb</odeBlockId>
           <odeIdeviceId>idevice-1781004920636-dwta4z37j</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2183,7 +2185,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid80-g3zrwmb2q</odePageId>
+      <odePageId>page-mqzhbsp0-i6v5p0rl4</odePageId>
       <odeBlockId>block-1782406215998-92jk1k0yy</odeBlockId>
       <blockName>Control remoto</blockName>
       <iconName>think</iconName>
@@ -2212,7 +2214,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid80-g3zrwmb2q</odePageId>
+          <odePageId>page-mqzhbsp0-i6v5p0rl4</odePageId>
           <odeBlockId>block-1782406215998-92jk1k0yy</odeBlockId>
           <odeIdeviceId>idevice-1782406215994-fmligj89g</odeIdeviceId>
           <odeIdeviceTypeName>padlock</odeIdeviceTypeName>
@@ -2244,8 +2246,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid82-z26nflzdt</odePageId>
-  <odeParentPageId>page-mqzdid78-dj91n3gw6</odeParentPageId>
+  <odePageId>page-mqzhbsp2-bsty1xcoj</odePageId>
+  <odeParentPageId>page-mqzhbso9-e3v00cdwf</odeParentPageId>
   <pageName>ESEROVER IoT</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2280,7 +2282,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid82-z26nflzdt</odePageId>
+      <odePageId>page-mqzhbsp2-bsty1xcoj</odePageId>
       <odeBlockId>block-1779560235744-md9e33f1n</odeBlockId>
       <blockName></blockName>
       <iconName></iconName>
@@ -2309,7 +2311,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid82-z26nflzdt</odePageId>
+          <odePageId>page-mqzhbsp2-bsty1xcoj</odePageId>
           <odeBlockId>block-1779560235744-md9e33f1n</odeBlockId>
           <odeIdeviceId>idevice-1779560235745-zjlp0058l</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2339,8 +2341,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid83-9h06i636x</odePageId>
-  <odeParentPageId>page-mqzdid82-z26nflzdt</odeParentPageId>
+  <odePageId>page-mqzhbsp4-yq6n8ue3j</odePageId>
+  <odeParentPageId>page-mqzhbsp2-bsty1xcoj</odeParentPageId>
   <pageName>MQTT</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2375,7 +2377,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid83-9h06i636x</odePageId>
+      <odePageId>page-mqzhbsp4-yq6n8ue3j</odePageId>
       <odeBlockId>20251124174722HDVZJL</odeBlockId>
       <blockName></blockName>
       <iconName>book</iconName>
@@ -2404,15 +2406,15 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid83-9h06i636x</odePageId>
+          <odePageId>page-mqzhbsp4-yq6n8ue3j</odePageId>
           <odeBlockId>20251124174722HDVZJL</odeBlockId>
           <odeIdeviceId>20251121152103JRMUJG</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
           <htmlView><![CDATA[<div class="exe-text-template">
     <p>En este apartado explicaremos como tener un sistema o robot gobernado a través de protocolo MQTT y programado con Microblocks. En nuestro caso el sistema será la placa microSTEAMakers que gobierna al robot ESEROver.</p>
-<p><span style="font-size: 36pt;"><span style="font-family: helvetica, arial, sans-serif;"><strong>MQTT</strong></span>+<img src="{{context_path}}/content/resources/asset-95efef28-0986-a1bf--639-6b16995efefd" alt="microblocks" title="microblocks" width="252" height="136" style="vertical-align: middle;" /></span></p>
+<p><span style="font-size: 36pt;"><span style="font-family: helvetica, arial, sans-serif;"><strong>MQTT</strong></span>+<img src="{{context_path}}/content/resources/microblockslogo.png" alt="" title="microblocks" width="252" height="136" style="vertical-align: middle;" /></span></p>
 </div>]]></htmlView>
-          <jsonProperties><![CDATA[{"ideviceId":"20251121152103JRMUJG","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p>En este apartado explicaremos como tener un sistema o robot gobernado a través de protocolo MQTT y programado con Microblocks. En nuestro caso el sistema será la placa microSTEAMakers que gobierna al robot ESEROver.</p>\n<p><span style=\"font-size: 36pt;\"><span style=\"font-family: helvetica, arial, sans-serif;\"><strong>MQTT</strong></span>+<img src=\"{{context_path}}/content/resources/asset-95efef28-0986-a1bf--639-6b16995efefd\" alt=\"microblocks\" title=\"microblocks\" width=\"252\" height=\"136\" style=\"vertical-align: middle;\" /></span></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
+          <jsonProperties><![CDATA[{"ideviceId":"20251121152103JRMUJG","textInfoDurationInput":"","textInfoDurationTextInput":"Duración","textInfoParticipantsInput":"","textInfoParticipantsTextInput":"Agrupamiento","textTextarea":"<p>En este apartado explicaremos como tener un sistema o robot gobernado a través de protocolo MQTT y programado con Microblocks. En nuestro caso el sistema será la placa microSTEAMakers que gobierna al robot ESEROver.</p>\n<p><span style=\"font-size: 36pt;\"><span style=\"font-family: helvetica, arial, sans-serif;\"><strong>MQTT</strong></span>+<img src=\"{{context_path}}/content/resources/microblockslogo.png\" alt=\"\" title=\"microblocks\" width=\"252\" height=\"136\" style=\"vertical-align: middle;\" /></span></p>","textFeedbackInput":"Mostrar retroalimentación","textFeedbackTextarea":""}]]></jsonProperties>
           <odeComponentsOrder>1</odeComponentsOrder>
           <odeComponentsProperties>
             <odeComponentsProperty>
@@ -2432,7 +2434,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid83-9h06i636x</odePageId>
+      <odePageId>page-mqzhbsp4-yq6n8ue3j</odePageId>
       <odeBlockId>block-1777734032966-l7z0m2xo0</odeBlockId>
       <blockName>¿Qué es MQTT?</blockName>
       <iconName>book</iconName>
@@ -2461,7 +2463,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid83-9h06i636x</odePageId>
+          <odePageId>page-mqzhbsp4-yq6n8ue3j</odePageId>
           <odeBlockId>block-1777734032966-l7z0m2xo0</odeBlockId>
           <odeIdeviceId>20251121152103KNELDD</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2487,7 +2489,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid83-9h06i636x</odePageId>
+      <odePageId>page-mqzhbsp4-yq6n8ue3j</odePageId>
       <odeBlockId>block-1777734360611-doas60crn</odeBlockId>
       <blockName>¿Qué es un servidor o broker mqtt?</blockName>
       <iconName>book</iconName>
@@ -2516,7 +2518,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid83-9h06i636x</odePageId>
+          <odePageId>page-mqzhbsp4-yq6n8ue3j</odePageId>
           <odeBlockId>block-1777734360611-doas60crn</odeBlockId>
           <odeIdeviceId>idevice-1777734360610-ju6jlzo3e</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2552,8 +2554,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid85-onc2y8c2w</odePageId>
-  <odeParentPageId>page-mqzdid83-9h06i636x</odeParentPageId>
+  <odePageId>page-mqzhbsp6-wejdie0ua</odePageId>
+  <odeParentPageId>page-mqzhbsp4-yq6n8ue3j</odeParentPageId>
   <pageName>Brokers disponibles</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2588,7 +2590,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid85-onc2y8c2w</odePageId>
+      <odePageId>page-mqzhbsp6-wejdie0ua</odePageId>
       <odeBlockId>20251124174722FXDMEF</odeBlockId>
       <blockName>Brokers disponibles y gratuitos</blockName>
       <iconName>book</iconName>
@@ -2617,7 +2619,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid85-onc2y8c2w</odePageId>
+          <odePageId>page-mqzhbsp6-wejdie0ua</odePageId>
           <odeBlockId>20251124174722FXDMEF</odeBlockId>
           <odeIdeviceId>202511211634497196SR</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2668,8 +2670,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid87-kct3u6zyh</odePageId>
-  <odeParentPageId>page-mqzdid83-9h06i636x</odeParentPageId>
+  <odePageId>page-mqzhbsp8-8182iwm1b</odePageId>
+  <odeParentPageId>page-mqzhbsp4-yq6n8ue3j</odeParentPageId>
   <pageName>Como crear Servidor MQTT (Broker)</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2704,7 +2706,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid87-kct3u6zyh</odePageId>
+      <odePageId>page-mqzhbsp8-8182iwm1b</odePageId>
       <odeBlockId>20251124174722EXUVSP</odeBlockId>
       <blockName>Creación de Servidor o broker MQTT</blockName>
       <iconName>book</iconName>
@@ -2733,7 +2735,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid87-kct3u6zyh</odePageId>
+          <odePageId>page-mqzhbsp8-8182iwm1b</odePageId>
           <odeBlockId>20251124174722EXUVSP</odeBlockId>
           <odeIdeviceId>20251121152103EMDUPR</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2796,7 +2798,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid87-kct3u6zyh</odePageId>
+      <odePageId>page-mqzhbsp8-8182iwm1b</odePageId>
       <odeBlockId>20251124174722ZHHEAD</odeBlockId>
       <blockName>Router</blockName>
       <iconName>description</iconName>
@@ -2825,7 +2827,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid87-kct3u6zyh</odePageId>
+          <odePageId>page-mqzhbsp8-8182iwm1b</odePageId>
           <odeBlockId>20251124174722ZHHEAD</odeBlockId>
           <odeIdeviceId>20251121152103YDJQJM</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2862,8 +2864,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid88-530irjf2z</odePageId>
-  <odeParentPageId>page-mqzdid83-9h06i636x</odeParentPageId>
+  <odePageId>page-mqzhbspa-ftuizm1w0</odePageId>
+  <odeParentPageId>page-mqzhbsp4-yq6n8ue3j</odeParentPageId>
   <pageName>Placa IoT</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -2898,7 +2900,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid88-530irjf2z</odePageId>
+      <odePageId>page-mqzhbspa-ftuizm1w0</odePageId>
       <odeBlockId>20251124174722FIRFKS</odeBlockId>
       <blockName>microSTEAMakers</blockName>
       <iconName>book</iconName>
@@ -2927,7 +2929,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid88-530irjf2z</odePageId>
+          <odePageId>page-mqzhbspa-ftuizm1w0</odePageId>
           <odeBlockId>20251124174722FIRFKS</odeBlockId>
           <odeIdeviceId>20251121152103RBKSQV</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -2954,7 +2956,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid88-530irjf2z</odePageId>
+      <odePageId>page-mqzhbspa-ftuizm1w0</odePageId>
       <odeBlockId>20251124174722VXMBEU</odeBlockId>
       <blockName>Programa</blockName>
       <iconName>book</iconName>
@@ -2983,7 +2985,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid88-530irjf2z</odePageId>
+          <odePageId>page-mqzhbspa-ftuizm1w0</odePageId>
           <odeBlockId>20251124174722VXMBEU</odeBlockId>
           <odeIdeviceId>20251121152103UGBBKX</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3015,8 +3017,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
-  <odeParentPageId>page-mqzdid83-9h06i636x</odeParentPageId>
+  <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
+  <odeParentPageId>page-mqzhbsp4-yq6n8ue3j</odeParentPageId>
   <pageName>Paneles o dashboards</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3051,7 +3053,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+      <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
       <odeBlockId>20251219163328ZLUWTG</odeBlockId>
       <blockName></blockName>
       <iconName>book</iconName>
@@ -3080,7 +3082,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+          <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
           <odeBlockId>20251219163328ZLUWTG</odeBlockId>
           <odeIdeviceId>20251204113734DQOBSR</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3107,7 +3109,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+      <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
       <odeBlockId>20251219163328VQVITK</odeBlockId>
       <blockName>Pará dispositivos móviles</blockName>
       <iconName>book</iconName>
@@ -3136,7 +3138,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+          <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
           <odeBlockId>20251219163328VQVITK</odeBlockId>
           <odeIdeviceId>20251204113734IQILAO</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3165,7 +3167,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+      <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
       <odeBlockId>20251219163328CVSUCI</odeBlockId>
       <blockName>Paneles webs</blockName>
       <iconName>book</iconName>
@@ -3194,7 +3196,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+          <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
           <odeBlockId>20251219163328CVSUCI</odeBlockId>
           <odeIdeviceId>20251204113734BYQMJD</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3224,7 +3226,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+      <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
       <odeBlockId>20251219163328QISGZB</odeBlockId>
       <blockName>Paneles de control en python</blockName>
       <iconName>book</iconName>
@@ -3253,7 +3255,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+          <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
           <odeBlockId>20251219163328QISGZB</odeBlockId>
           <odeIdeviceId>20251204113734CHEDKC</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3289,7 +3291,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+      <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
       <odeBlockId>20251219163328LNWGRW</odeBlockId>
       <blockName>Programa python</blockName>
       <iconName>book</iconName>
@@ -3318,7 +3320,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8a-a9qnt0xyc</odePageId>
+          <odePageId>page-mqzhbspb-ff2jw9net</odePageId>
           <odeBlockId>20251219163328LNWGRW</odeBlockId>
           <odeIdeviceId>20251204113734TTTVDQ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3345,8 +3347,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
-  <odeParentPageId>page-mqzdid82-z26nflzdt</odeParentPageId>
+  <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
+  <odeParentPageId>page-mqzhbsp2-bsty1xcoj</odeParentPageId>
   <pageName>Control wifi</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3381,7 +3383,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+      <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
       <odeBlockId>20251219163328NTLLUZ</odeBlockId>
       <blockName></blockName>
       <iconName>book</iconName>
@@ -3410,7 +3412,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+          <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
           <odeBlockId>20251219163328NTLLUZ</odeBlockId>
           <odeIdeviceId>20251204113734DGASQJ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3435,7 +3437,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+      <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
       <odeBlockId>20251219163328AHJTOX</odeBlockId>
       <blockName>Aplicación para la placa</blockName>
       <iconName>book</iconName>
@@ -3464,7 +3466,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+          <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
           <odeBlockId>20251219163328AHJTOX</odeBlockId>
           <odeIdeviceId>20251204113734RXYCYS</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3490,7 +3492,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+      <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
       <odeBlockId>20251219163328WRKJWK</odeBlockId>
       <blockName>Programa de la placa</blockName>
       <iconName>book</iconName>
@@ -3519,7 +3521,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+          <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
           <odeBlockId>20251219163328WRKJWK</odeBlockId>
           <odeIdeviceId>20251204113734UUSUHZ</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3544,7 +3546,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+      <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
       <odeBlockId>20251219163328HNATXX</odeBlockId>
       <blockName>Página web de control o panel (dashboard)</blockName>
       <iconName>book</iconName>
@@ -3573,7 +3575,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+          <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
           <odeBlockId>20251219163328HNATXX</odeBlockId>
           <odeIdeviceId>20251204113734WUFDBC</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3599,7 +3601,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+      <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
       <odeBlockId>20251219163328YDPDQK</odeBlockId>
       <blockName>web de control</blockName>
       <iconName>book</iconName>
@@ -3628,7 +3630,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8c-c2zpofd5j</odePageId>
+          <odePageId>page-mqzhbspe-q4pwj3ml6</odePageId>
           <odeBlockId>20251219163328YDPDQK</odeBlockId>
           <odeIdeviceId>20251204113734AEVLWL</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3655,8 +3657,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8e-r4z9eez37</odePageId>
-  <odeParentPageId>page-mqzdid74-89x99my1g</odeParentPageId>
+  <odePageId>page-mqzhbspg-7pio2raw0</odePageId>
+  <odeParentPageId>page-mqzhbso5-8tqohjutn</odeParentPageId>
   <pageName>MOON GARDEN</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3699,7 +3701,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8e-r4z9eez37</odePageId>
+      <odePageId>page-mqzhbspg-7pio2raw0</odePageId>
       <odeBlockId>20260606182547TWTCDE</odeBlockId>
       <blockName></blockName>
       <iconName>start</iconName>
@@ -3728,7 +3730,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8e-r4z9eez37</odePageId>
+          <odePageId>page-mqzhbspg-7pio2raw0</odePageId>
           <odeBlockId>20260606182547TWTCDE</odeBlockId>
           <odeIdeviceId>202605311538445966P3</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3777,7 +3779,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8e-r4z9eez37</odePageId>
+      <odePageId>page-mqzhbspg-7pio2raw0</odePageId>
       <odeBlockId>20260606182547LSHHLP</odeBlockId>
       <blockName>Invernadero lunar en el desafío Moon Camp</blockName>
       <iconName>think_alt</iconName>
@@ -3806,7 +3808,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8e-r4z9eez37</odePageId>
+          <odePageId>page-mqzhbspg-7pio2raw0</odePageId>
           <odeBlockId>20260606182547LSHHLP</odeBlockId>
           <odeIdeviceId>20260602094554507FVC</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -3861,8 +3863,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8h-j06mvb4c4</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbspi-glrts687b</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>Hardware</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -3905,7 +3907,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8h-j06mvb4c4</odePageId>
+      <odePageId>page-mqzhbspi-glrts687b</odePageId>
       <odeBlockId>20260606182547OITIDG</odeBlockId>
       <blockName>Hardware</blockName>
       <iconName>draw</iconName>
@@ -3934,7 +3936,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8h-j06mvb4c4</odePageId>
+          <odePageId>page-mqzhbspi-glrts687b</odePageId>
           <odeBlockId>20260606182547OITIDG</odeBlockId>
           <odeIdeviceId>202605271930573461YX</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4007,8 +4009,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8i-re4lndc6t</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbspk-y6coorqf4</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>Conexionado</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4051,7 +4053,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8i-re4lndc6t</odePageId>
+      <odePageId>page-mqzhbspk-y6coorqf4</odePageId>
       <odeBlockId>20260606182547PLLNXC</odeBlockId>
       <blockName>Conexionado de la placa ESP32 mSTM</blockName>
       <iconName>draw</iconName>
@@ -4080,7 +4082,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8i-re4lndc6t</odePageId>
+          <odePageId>page-mqzhbspk-y6coorqf4</odePageId>
           <odeBlockId>20260606182547PLLNXC</odeBlockId>
           <odeIdeviceId>2026053118084200649J</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4144,7 +4146,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8i-re4lndc6t</odePageId>
+      <odePageId>page-mqzhbspk-y6coorqf4</odePageId>
       <odeBlockId>block-1780920034211-7tlyu0ag0</odeBlockId>
       <blockName>Diagrama de conexión</blockName>
       <iconName>piece</iconName>
@@ -4173,7 +4175,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8i-re4lndc6t</odePageId>
+          <odePageId>page-mqzhbspk-y6coorqf4</odePageId>
           <odeBlockId>block-1780920034211-7tlyu0ag0</odeBlockId>
           <odeIdeviceId>idevice-1780920034208-7dnjpdzj1</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4202,8 +4204,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8k-c85gkdkds</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbspn-kpkfdxqjg</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>Estructura del Moon Garden</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4246,7 +4248,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8k-c85gkdkds</odePageId>
+      <odePageId>page-mqzhbspn-kpkfdxqjg</odePageId>
       <odeBlockId>20260606182547IWPWJI</odeBlockId>
       <blockName>Estructura MoonGarden</blockName>
       <iconName>draw</iconName>
@@ -4275,7 +4277,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8k-c85gkdkds</odePageId>
+          <odePageId>page-mqzhbspn-kpkfdxqjg</odePageId>
           <odeBlockId>20260606182547IWPWJI</odeBlockId>
           <odeIdeviceId>20260602110128541CHI</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4324,7 +4326,7 @@
       </odeComponents>
     </odePagStructure>
     <odePagStructure>
-      <odePageId>page-mqzdid8k-c85gkdkds</odePageId>
+      <odePageId>page-mqzhbspn-kpkfdxqjg</odePageId>
       <odeBlockId>20260606182547DVROAN</odeBlockId>
       <blockName>Archivos de impresión 3D</blockName>
       <iconName>video</iconName>
@@ -4353,7 +4355,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8k-c85gkdkds</odePageId>
+          <odePageId>page-mqzhbspn-kpkfdxqjg</odePageId>
           <odeBlockId>20260606182547DVROAN</odeBlockId>
           <odeIdeviceId>20260602132450486813</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4395,8 +4397,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8l-1o54lch9u</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbspp-q3wpwxed9</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>Software</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4439,7 +4441,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8l-1o54lch9u</odePageId>
+      <odePageId>page-mqzhbspp-q3wpwxed9</odePageId>
       <odeBlockId>20260606182547BHQBZS</odeBlockId>
       <blockName>Software</blockName>
       <iconName>reflection</iconName>
@@ -4468,7 +4470,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8l-1o54lch9u</odePageId>
+          <odePageId>page-mqzhbspp-q3wpwxed9</odePageId>
           <odeBlockId>20260606182547BHQBZS</odeBlockId>
           <odeIdeviceId>20260601142036364M85</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4507,8 +4509,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8o-u9htx447u</odePageId>
-  <odeParentPageId>page-mqzdid8l-1o54lch9u</odeParentPageId>
+  <odePageId>page-mqzhbspq-bnelps6i6</odePageId>
+  <odeParentPageId>page-mqzhbspp-q3wpwxed9</odeParentPageId>
   <pageName>Programa completo con IOT</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4551,7 +4553,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8o-u9htx447u</odePageId>
+      <odePageId>page-mqzhbspq-bnelps6i6</odePageId>
       <odeBlockId>20260606182547DAOXHU</odeBlockId>
       <blockName>Programa completo del Invernadero</blockName>
       <iconName>reflection</iconName>
@@ -4580,7 +4582,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8o-u9htx447u</odePageId>
+          <odePageId>page-mqzhbspq-bnelps6i6</odePageId>
           <odeBlockId>20260606182547DAOXHU</odeBlockId>
           <odeIdeviceId>20260528171849225JLR</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4628,8 +4630,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8p-zl5yyb41j</odePageId>
-  <odeParentPageId>page-mqzdid8l-1o54lch9u</odeParentPageId>
+  <odePageId>page-mqzhbsps-majz65qi9</odePageId>
+  <odeParentPageId>page-mqzhbspp-q3wpwxed9</odeParentPageId>
   <pageName>Programa Lite sin IoT</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4672,7 +4674,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8p-zl5yyb41j</odePageId>
+      <odePageId>page-mqzhbsps-majz65qi9</odePageId>
       <odeBlockId>20260606182547ZUQURJ</odeBlockId>
       <blockName>Progama Básico</blockName>
       <iconName>reflection</iconName>
@@ -4701,7 +4703,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8p-zl5yyb41j</odePageId>
+          <odePageId>page-mqzhbsps-majz65qi9</odePageId>
           <odeBlockId>20260606182547ZUQURJ</odeBlockId>
           <odeIdeviceId>20260531135023262E3R</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4731,8 +4733,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8r-91qgbih95</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbspu-8vjkg0m0h</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>Moongarden IoT </pageName>
   <odeNavStructureOrder>4</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4775,7 +4777,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8r-91qgbih95</odePageId>
+      <odePageId>page-mqzhbspu-8vjkg0m0h</odePageId>
       <odeBlockId>20260606182547HEIRSI</odeBlockId>
       <blockName>Moongarden IoT</blockName>
       <iconName>reflection</iconName>
@@ -4804,7 +4806,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8r-91qgbih95</odePageId>
+          <odePageId>page-mqzhbspu-8vjkg0m0h</odePageId>
           <odeBlockId>20260606182547HEIRSI</odeBlockId>
           <odeIdeviceId>20260601133616810GMS</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4850,8 +4852,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8t-os1u1w393</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbspv-hek4w1a0a</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>Retos</pageName>
   <odeNavStructureOrder>5</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -4894,7 +4896,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8t-os1u1w393</odePageId>
+      <odePageId>page-mqzhbspv-hek4w1a0a</odePageId>
       <odeBlockId>block-1780934707914-gyujrmr92</odeBlockId>
       <blockName>Retos en el invernadero</blockName>
       <iconName>think_alt</iconName>
@@ -4923,7 +4925,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8t-os1u1w393</odePageId>
+          <odePageId>page-mqzhbspv-hek4w1a0a</odePageId>
           <odeBlockId>block-1780934707914-gyujrmr92</odeBlockId>
           <odeIdeviceId>idevice-1780934707913-4hsv88b1p</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -4965,8 +4967,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8u-byr6ztv0g</odePageId>
-  <odeParentPageId>page-mqzdid8t-os1u1w393</odeParentPageId>
+  <odePageId>page-mqzhbspx-wxb52d66k</odePageId>
+  <odeParentPageId>page-mqzhbspv-hek4w1a0a</odeParentPageId>
   <pageName>Reto 1. Mostrar en la pantalla la temperatura</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5009,7 +5011,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8u-byr6ztv0g</odePageId>
+      <odePageId>page-mqzhbspx-wxb52d66k</odePageId>
       <odeBlockId>20260606182547QESECJ</odeBlockId>
       <blockName>Reto 1. Mostrar temperatura en pantalla OLED</blockName>
       <iconName>reflection</iconName>
@@ -5038,7 +5040,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8u-byr6ztv0g</odePageId>
+          <odePageId>page-mqzhbspx-wxb52d66k</odePageId>
           <odeBlockId>20260606182547QESECJ</odeBlockId>
           <odeIdeviceId>202606011758383854J0</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5097,8 +5099,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8w-fs9r7u5n8</odePageId>
-  <odeParentPageId>page-mqzdid8t-os1u1w393</odeParentPageId>
+  <odePageId>page-mqzhbspz-9eexq5kc9</odePageId>
+  <odeParentPageId>page-mqzhbspv-hek4w1a0a</odeParentPageId>
   <pageName>Reto 2. Color Neomatrix en función de la Temperatura</pageName>
   <odeNavStructureOrder>1</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5141,7 +5143,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8w-fs9r7u5n8</odePageId>
+      <odePageId>page-mqzhbspz-9eexq5kc9</odePageId>
       <odeBlockId>20260606182547SHLANI</odeBlockId>
       <blockName>Termómetro en color</blockName>
       <iconName>reflection</iconName>
@@ -5170,7 +5172,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8w-fs9r7u5n8</odePageId>
+          <odePageId>page-mqzhbspz-9eexq5kc9</odePageId>
           <odeBlockId>20260606182547SHLANI</odeBlockId>
           <odeIdeviceId>202606020959134892QK</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5294,8 +5296,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8y-besgq00eh</odePageId>
-  <odeParentPageId>page-mqzdid8t-os1u1w393</odeParentPageId>
+  <odePageId>page-mqzhbsq0-ylj67awgb</odePageId>
+  <odeParentPageId>page-mqzhbspv-hek4w1a0a</odeParentPageId>
   <pageName>Reto 3. Control riego y luz con botones A y B</pageName>
   <odeNavStructureOrder>2</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5338,7 +5340,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8y-besgq00eh</odePageId>
+      <odePageId>page-mqzhbsq0-ylj67awgb</odePageId>
       <odeBlockId>20260606182547NLCYJU</odeBlockId>
       <blockName>Control de Riego y Luz</blockName>
       <iconName>reflection</iconName>
@@ -5367,7 +5369,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8y-besgq00eh</odePageId>
+          <odePageId>page-mqzhbsq0-ylj67awgb</odePageId>
           <odeBlockId>20260606182547NLCYJU</odeBlockId>
           <odeIdeviceId>20260602195101849F47</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5442,8 +5444,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid8z-ld6kow6oq</odePageId>
-  <odeParentPageId>page-mqzdid8t-os1u1w393</odeParentPageId>
+  <odePageId>page-mqzhbsq2-w2em61n6b</odePageId>
+  <odeParentPageId>page-mqzhbspv-hek4w1a0a</odeParentPageId>
   <pageName>Reto 4. Datalogger temperatura y humedad</pageName>
   <odeNavStructureOrder>3</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5486,7 +5488,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid8z-ld6kow6oq</odePageId>
+      <odePageId>page-mqzhbsq2-w2em61n6b</odePageId>
       <odeBlockId>20260606182547PWKSZA</odeBlockId>
       <blockName>Data Logger</blockName>
       <iconName>reflection</iconName>
@@ -5515,7 +5517,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid8z-ld6kow6oq</odePageId>
+          <odePageId>page-mqzhbsq2-w2em61n6b</odePageId>
           <odeBlockId>20260606182547PWKSZA</odeBlockId>
           <odeIdeviceId>2026060318503108609B</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5567,8 +5569,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid91-syus2shod</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbsq4-lr2511q1p</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>Entorno VR</pageName>
   <odeNavStructureOrder>6</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5611,7 +5613,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid91-syus2shod</odePageId>
+      <odePageId>page-mqzhbsq4-lr2511q1p</odePageId>
       <odeBlockId>20260606182547TMQLUR</odeBlockId>
       <blockName>Moongraden VR</blockName>
       <iconName>observe</iconName>
@@ -5640,7 +5642,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid91-syus2shod</odePageId>
+          <odePageId>page-mqzhbsq4-lr2511q1p</odePageId>
           <odeBlockId>20260606182547TMQLUR</odeBlockId>
           <odeIdeviceId>20260601142821900HPY</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5699,8 +5701,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid92-glyum7gfq</odePageId>
-  <odeParentPageId>page-mqzdid91-syus2shod</odeParentPageId>
+  <odePageId>page-mqzhbsq5-e7ugac1vz</odePageId>
+  <odeParentPageId>page-mqzhbsq4-lr2511q1p</odeParentPageId>
   <pageName>Documentacion</pageName>
   <odeNavStructureOrder>0</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5743,7 +5745,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid92-glyum7gfq</odePageId>
+      <odePageId>page-mqzhbsq5-e7ugac1vz</odePageId>
       <odeBlockId>20260606182547WWEAGD</odeBlockId>
       <blockName>Manual de Delightex</blockName>
       <iconName>diary</iconName>
@@ -5772,7 +5774,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid92-glyum7gfq</odePageId>
+          <odePageId>page-mqzhbsq5-e7ugac1vz</odePageId>
           <odeBlockId>20260606182547WWEAGD</odeBlockId>
           <odeIdeviceId>20260604123129790G5Q</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5802,8 +5804,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid94-105f61uwy</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>ACTIVIDADES EN EL AULA</pageName>
   <odeNavStructureOrder>7</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5838,7 +5840,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid94-105f61uwy</odePageId>
+      <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
       <odeBlockId>20251219163328DCQKES</odeBlockId>
       <blockName>Actividades en el Aula</blockName>
       <iconName>book</iconName>
@@ -5867,7 +5869,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid94-105f61uwy</odePageId>
+          <odePageId>page-mqzhbsq7-n02wljxto</odePageId>
           <odeBlockId>20251219163328DCQKES</odeBlockId>
           <odeIdeviceId>20251204113734MIWCYG</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -5907,8 +5909,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid95-xioj63frv</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>EVALUACIÓN DEL PROYECTO</pageName>
   <odeNavStructureOrder>8</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -5943,7 +5945,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid95-xioj63frv</odePageId>
+      <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
       <odeBlockId>20251219163328FECDPS</odeBlockId>
       <blockName>Evaluación del Proyecto</blockName>
       <iconName>book</iconName>
@@ -5972,7 +5974,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid95-xioj63frv</odePageId>
+          <odePageId>page-mqzhbsq9-q4t8b447r</odePageId>
           <odeBlockId>20251219163328FECDPS</odeBlockId>
           <odeIdeviceId>20251204113734RSXJIP</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
@@ -6005,8 +6007,8 @@
   </odePagStructures>
 </odeNavStructure>
 <odeNavStructure>
-  <odePageId>page-mqzdid97-bqatnsdvu</odePageId>
-  <odeParentPageId>page-mqzdid8e-r4z9eez37</odeParentPageId>
+  <odePageId>page-mqzhbsqa-2amssm9oz</odePageId>
+  <odeParentPageId>page-mqzhbspg-7pio2raw0</odeParentPageId>
   <pageName>CRÉDITOS</pageName>
   <odeNavStructureOrder>9</odeNavStructureOrder>
   <odeNavStructureProperties>
@@ -6041,7 +6043,7 @@
   </odeNavStructureProperties>
   <odePagStructures>
     <odePagStructure>
-      <odePageId>page-mqzdid97-bqatnsdvu</odePageId>
+      <odePageId>page-mqzhbsqa-2amssm9oz</odePageId>
       <odeBlockId>20251219163328PQMYCW</odeBlockId>
       <blockName>CRÉDITOS</blockName>
       <iconName>collaborative</iconName>
@@ -6070,7 +6072,7 @@
       </odePagStructureProperties>
       <odeComponents>
         <odeComponent>
-          <odePageId>page-mqzdid97-bqatnsdvu</odePageId>
+          <odePageId>page-mqzhbsqa-2amssm9oz</odePageId>
           <odeBlockId>20251219163328PQMYCW</odeBlockId>
           <odeIdeviceId>20251204113734KEGFQU</odeIdeviceId>
           <odeIdeviceTypeName>text</odeIdeviceTypeName>
