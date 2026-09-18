@@ -2,7 +2,7 @@
 <html lang="es" id="exe-page-mqzhbsp8-8182iwm1b">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="eXeLearning v4.0.1">
+<meta name="generator" content="eXeLearning v4.0.5">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
 <title>Como crear Servidor MQTT (Broker) | MoonCamp_ password</title>
@@ -131,7 +131,7 @@
 <article id="20251124174722EXUVSP" class="box">
 <header class="box-head">
 <div class="box-icon exe-icon">
-<img src="../theme/icons/book.svg" alt="">
+<img src="../theme/icons/book.svg" alt="" style="display:block;object-fit:contain;">
 </div>
 <h1 class="box-title">Creación de Servidor o broker MQTT</h1>
 <button class="box-toggle box-toggle-on" title="Toggle content">
@@ -151,11 +151,11 @@
 <p><code>sudo systemctl status mosquitto</code></p>
 <p><span style="font-size: 14pt;"><strong>Configuración del servidor</strong></span></p>
 <p>Además hay que modificar el archivo de configuración de mosquitto, en mi caso con el editor de texto nano:</p>
-<p><img src="../content/resources/asset-f4c18dca-9aa7-e930-6e66-64faf4c18eea" alt="configuración de mosquitto 01" title="configuración de mosquitto 01" width="660" height="197" /></p>
+<p><img src="../content/resources/asset-f4c18dca-9aa7-e930-6e66-64faf4c18eea.png" alt="configuración de mosquitto 01" title="configuración de mosquitto 01" width="660" height="197" /></p>
 <p>Al mismo añadimos las líneas:</p>
 <p><code><em>listener 1883</em></code></p>
 <p><code><em>allow_anonymous true</em></code></p>
-<p><img src="../content/resources/asset-c3887328-6ce0-83fa--509-70f2ec38874d" alt="configuración mosquitto 02" title="configuración mosquitto 02" width="659" height="469" /></p>
+<p><img src="../content/resources/asset-c3887328-6ce0-83fa--509-70f2ec38874d.png" alt="configuración mosquitto 02" title="configuración mosquitto 02" width="659" height="469" /></p>
 <p>Esto permite al servidor atender al puerto 1883 (el de mqtt) y permitir el uso del mismo a usuarios anónimos.</p>
 <p><span style="font-size: 14pt;"><strong>Configuración de <em>mosquitto</em> para autenticación</strong></span></p>
 <p>También podemos añadir al servidor usuarios y contraseñas, e incluso no permitir el uso a usuarios anónimos (sin identificación).</p>
@@ -166,7 +166,7 @@
 <p><code>#allow_anonymous true</code></p>
 <p>La primera línea no permite usuarios anónimos y las segunda indica dónde está el fichero de usuarios y contraseñas cifradas.</p>
 <p>El fichero de configuración quedaría de la siguiente manera:</p>
-<p><img src="../content/resources/asset-3a8a2fa0-0a7c-68fd-30f6-475d3a8a30ca" alt="mosquitto.conf" title="mosquitto.conf" width="660" height="476" /><code></code></p>
+<p><img src="../content/resources/asset-3a8a2fa0-0a7c-68fd-30f6-475d3a8a30ca.png" alt="mosquitto.conf" title="mosquitto.conf" width="660" height="476" /><code></code></p>
 <p>También hemos añadido las líneas:</p>
 <p><code>listener 9001</code></p>
 <p><code>protocol websockets</code></p>
@@ -183,7 +183,7 @@
 </article><article id="20251124174722ZHHEAD" class="box">
 <header class="box-head">
 <div class="box-icon exe-icon">
-<img src="../theme/icons/description.png" alt="">
+<img src="../theme/icons/description.png" alt="" style="display:block;object-fit:contain;">
 </div>
 <h1 class="box-title">Router</h1>
 <button class="box-toggle box-toggle-on" title="Toggle content">
@@ -192,13 +192,13 @@
 <div class="box-content">
 <div id="20251121152103YDJQJM" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20251121152103YDJQJM&quot;}">
 <p>En el enrutador lo primero que debemos hacer es abrir las características de mi dispositivo en la red.</p>
-<p><img src="../content/resources/asset-fe099f76-7782-18d8--767-47852fe09a03" alt="router 01" title="router 01" width="599" height="386" /></p>
+<p><img src="../content/resources/asset-fe099f76-7782-18d8--767-47852fe09a03.png" alt="router 01" title="router 01" width="599" height="386" /></p>
 <p>Ahora debemos reservar una ip local para el dispositivo.</p>
-<p><img src="../content/resources/asset-50f27786-08dc-ae4a-582e-d9cc50f27876" alt="router 02" title="router 02" width="601" height="372" /></p>
+<p><img src="../content/resources/asset-50f27786-08dc-ae4a-582e-d9cc50f27876.png" alt="router 02" title="router 02" width="601" height="372" /></p>
 <p>Posteriormente haremos una redirección del trafico mqtt al puerto 1883 del router a la ip local del servidor. Está opción está en port forwarding.</p>
-<p><img src="../content/resources/asset-d50b8ef0-45ca-a5e7--6f3-ed4e9d50b90a" alt="router 03" title="router 03" width="600" height="538" /></p>
+<p><img src="../content/resources/asset-d50b8ef0-45ca-a5e7--6f3-ed4e9d50b90a.png" alt="router 03" title="router 03" width="600" height="538" /></p>
 <p>Además si queremos trabajar desde webs sobre el servidor debemos abrir el puerto 9001 y redireccionarlo a la ip local del servidor (raspberry pi). De esta forma estamos haciendo posible la conexión mediante el protocolo websockets de páginas webs y el servidor mqtt.</p>
-<p><img src="../content/resources/asset-83dd2368-bc8f-be31-3f52-9d5983dd2497" alt="router04" title="router04" width="600" height="566" /></p>
+<p><img src="../content/resources/asset-83dd2368-bc8f-be31-3f52-9d5983dd2497.png" alt="router04" title="router04" width="600" height="566" /></p>
 <p></p>
 <p></p>
 <p></p>
